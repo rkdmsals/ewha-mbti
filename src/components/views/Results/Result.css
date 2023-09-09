@@ -76,17 +76,5 @@
     padding-top: 65px;
 }
 
-.SNSButton {
-    width: 57px;
-    height: 57px;
-    border-radius: 50%;
-    background: #2E6D4A;
-    display: flex;
-}
-
-.Images {
-    width: 60%;
-    margin: auto
-}
 
 @media (max-width: 600px) {}

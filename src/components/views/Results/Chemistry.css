@@ -1,0 +1,30 @@
+.ChemistryPage {
+    width: 200px;
+    height: 308px;
+    border-radius: 10px;
+    border: 1.5px solid #2E6D4A;
+    justify-items: center;
+    text-align: center;
+}
+
+.ChemiTitle {
+    padding: 30px 10px 5px 10px;
+    box-shadow: inset 0 -16px 0 rgba(2, 87, 57, 0.15);
+    font-weight: 400;
+}
+
+.ChemiImg {
+    width: 153px;
+    padding-top: 17px;
+}
+
+.ChemiMiddle {
+    font-size: 16px;
+    margin-top: 26px;
+}
+
+.ChemiName {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 10px;
+}
