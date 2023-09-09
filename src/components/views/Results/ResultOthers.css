@@ -1,0 +1,80 @@
+.ShareButtons {
+    width: 100%;
+    display: flex;
+}
+
+.ShareText img {
+    width: 21px;
+    margin-top: 10px
+}
+
+.ShareText {
+    text-align: center;
+    padding-top: 39px;
+    border-top: solid 1px rgba(46, 109, 74, 0.25);
+    margin-top: 56px;
+    margin-bottom: 18px;
+}
+
+.ShareText span {
+    text-align: center;
+    margin: 0px 0px 10px 10px;
+    font-size: 20px;
+}
+
+.SNSButton {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background: #2E6D4A;
+    display: flex;
+    margin-left: 33px;
+    margin-right: auto;
+}
+
+.Images {
+    width: 60%;
+    margin: auto
+}
+
+.GuideImg {
+    width: 100%;
+    margin-top: 51px;
+    justify-content: center;
+}
+
+
+.AllTypesButton,
+.ReTestButton {
+    width: 415px;
+    height: 62px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 0 0 auto 0;
+    margin: 0 0 33px 25px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.GoGuideButton {
+    width: 162.866px;
+    height: 37.324px;
+    border-radius: 26px;
+    background: #402C33;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -118px;
+    left: 248px;
+}
+
+.AllTypesButton {
+    background: #2E6D4A;
+    color: #F8FFE4;
+}
+
+.ReTestButton {
+    background: #E7E7E7;
+    color: #2E6D4A;
+}
