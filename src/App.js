@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import { Router } from "express";
 import Home from "./components/views/HomePage/Home";
-import EventResult from "./components/views/EventPage/EventResult";
+import Result from "./components/views/Results/Result";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             element={<Home />}
           />
 
-          <Route exact path="/eventResult" element={<EventResult />} />
+          <Route exact path="/result" element={<Result />} />
         </Routes>
       </BrowserRouter>
     </div>
