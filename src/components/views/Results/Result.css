@@ -70,11 +70,7 @@
     border-radius: 50%;
     border-width: 35px;
 } */
-.Chemistries {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 65px;
-}
+
 
 
 @media (max-width: 600px) {}

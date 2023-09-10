@@ -6,7 +6,6 @@
     color: #FFFDD4;
     text-align: center;
     margin: 0 auto 30px auto;
-
 }
 
 .Position1,
@@ -17,7 +16,7 @@
 }
 
 .Position2 {
-    top: -23px;
+    top: -28px;
 }
 
 .Circle {
@@ -46,12 +45,4 @@
 footer {
     position: sticky;
     bottom: 0;
-}
-
-button {
-    background-color: #494949;
-    color: #EAEAEA;
-    font-size: 26px;
-    width: 465px;
-    height: 70px;
 }
