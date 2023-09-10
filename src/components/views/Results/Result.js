@@ -1,6 +1,8 @@
 import "./Result.css";
 import Chemistry from "./Chemistry";
 import ResultOthers from "./ResultOthers";
+import Logo from "../../Footer/Logo";
+// import resultData from "./AllResults.json";
 function Result() {
     return (
         <div className="ResultPage">
@@ -11,10 +13,10 @@ function Result() {
                 <img className="TypeImg" alt="auditorium_img" src="/img/auditorium.png" />
                 <div className="SameMbti">전체 테스트 참여자 중 7.37%가 같은 유형입니다.</div>
             </div>
-
+            {/*외향, 내향 등의 비율을 나타내는 부분 */}
             <div className="ResultFrame">
                 <div className="ResultPercent">
-                    <div className="EAndI"><span className="Circle"></span></div>
+                    <div className="EAndI"></div>
                     <div className="NAndS"></div>
                     <div className="TAndF"></div>
                     <div className="PAndJ"></div>
@@ -26,14 +28,11 @@ function Result() {
                     누워서 책을 읽거나 그림을 그리는 등의 여유로운 시간을 보내는 것은 기숙사 유형의 벗에게 큰 만족감을 줄 것입니다. 기숙사는 그런 소중한 순간들을 위한 완벽한 장소로, 그들의 성장과 창의력 발휘를 지원해줄 것입니다.
                     기숙사에서 벗들과 함께 나누는 소중한 시간들과 함께, 자신만의 개성을 표현하고 성장할 수 있는 환경을 찾게 될 것입니다.
                 </div>
-
-                <div className="Chemistries">
-                    <Chemistry />
-                    <Chemistry />
-                </div>
+                <Chemistry />
                 <ResultOthers />
+                <Logo />
             </div>
-        </div>
+        </div >
     );
 }
 
