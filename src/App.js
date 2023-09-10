@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/views/HomePage/Home";
 import Result from "./components/views/Results/Result";
 
+import ViewAllResult from "./components/views/ViewAllResult/ViewAllResult";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           />
 
           <Route exact path="/result" element={<Result />} />
+          <Route exact path="/viewAllResult" element={<ViewAllResult />} />
         </Routes>
       </BrowserRouter>
     </div>
