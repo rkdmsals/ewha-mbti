@@ -23,3 +23,11 @@
     width: 465px;
     margin: auto;
 }
+
+button {
+    background-color: #494949;
+    color: #EAEAEA;
+    font-size: 26px;
+    width: 465px;
+    height: 70px;
+}
