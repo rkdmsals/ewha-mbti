@@ -5,6 +5,7 @@ import Result from "./components/views/Results/Result";
 import Chemistry from "./components/views/Results/Chemistry";
 import ViewAllResult from "./components/views/ViewAllResult/ViewAllResult";
 import MbtiMain from "./components/views/mbtimain/mbtimain";
+import Test from "./components/views/TestPage/Test";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/result" element={<Result />} />
           <Route exact path="/viewAllResult" element={<ViewAllResult />} />
           <Route exact path="/mbtimain" element={<MbtiMain />} />
+          <Route exact path="/test/:num" element={<Test />} />
         </Routes>
       </BrowserRouter>
     </div>
