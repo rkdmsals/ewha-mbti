@@ -4,11 +4,26 @@ import './mtmainstyle.css';
 
 function MbtiMain() {
   const images = [
-    // 이미지 
-  ];
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    '/img/auditorium.png',
+    
+  ]
 
   const textData = [
-    // 이미지 설명
   ];
 
   function ImageSlider() {
@@ -19,18 +34,13 @@ function MbtiMain() {
         setCurrentIndex((prevIndex) =>
           prevIndex === images.length - 1 ? 0 : prevIndex + 1
         );
-      }, 1500);
+      }, 2000);
 
       return () => clearInterval(interval);
     }, []);
 
     return (
       <div className="image-slider">
-        <h3>성격유형테스트</h3>
-        <h1>나와 어울리는</h1>
-        <h1>이화여자대학교</h1>
-        <h1>건물</h1>
-        <h1>은?</h1>
         <div className="slider-item">
           <img
             src={images[currentIndex]}
@@ -53,20 +63,28 @@ function MbtiMain() {
 
   return (
     <div className="MbtiMain">
+      <div style={{ color:'#3A3A3A'}}>성격유형테스트</div>
+      <div style={{ fontSize: '40px' }}>나와 어울리는</div>
+      <div style={{ fontSize: '40px' }}>이화여자대학교</div>
+      <div style={{ margin: '0', display: 'inline', marginBottom: '22px' }}>
+        <div style={{ fontSize: '40px',display: 'inline', fontWeight: 'normal', color:'#2E6D4A',}}>건물 <div style={{ fontSize: '40px', display: 'inline', fontWeight: 'normal', paddingRight: '10px'}}>은?</div></div>
+      </div>
+      <ImageSlider />
       <Link to="/button1">
         <button>테스트 시작하기</button>
       </Link>
       <Link to="/button2">
-        <button>친구에게 공유하기</button>
+        <button style={{ backgroundColor: '#2e6d4a' }}>친구에게 공유하기</button>
       </Link>
       <Routes>
         <Route path="/button1" component={TestStart} />
         <Route path="/button2" component={ShareWithFriends} />
       </Routes>
-      <ImageSlider />
+      <div style={{ marginTop: '50px' }}>
+        <img src="/img/Footer/Footer_logo.png" alt="footer_logo" style={{ width: '96.43px', height: '26.73px' }} />
+      </div>
     </div>
   );
-
 }
 
 export default MbtiMain;
