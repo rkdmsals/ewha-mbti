@@ -18,10 +18,10 @@ function App() {
             element={<Home />}
           />
           <Route exact path="/Chemi" element={<Chemistry />} />
-          <Route exact path="/result" element={<Result />} />
+          <Route exact path="/test/result" element={<Result />} />
           <Route exact path="/viewAllResult" element={<ViewAllResult />} />
           <Route exact path="/mbtimain" element={<MbtiMain />} />
-          <Route exact path="/test/:num" element={<Test />} />
+          <Route exact path="/test" element={<Test />} />
         </Routes>
       </BrowserRouter>
     </div>
