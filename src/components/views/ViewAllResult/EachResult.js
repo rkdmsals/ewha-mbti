@@ -7,7 +7,7 @@ function EachResult(props) {
     return (<div className="EachResult">
         <div className="Position1"><div className="Circle"></div><div className="Circle"></div></div>
 
-        <img className="ViewImg" src={img_path} />
+        <img className="ViewImg" alt="결과 이미지" src={img_path} />
         <div className="ViewSubName">{subname}</div>
         <div className="ViewName">{result_name}</div>
 
