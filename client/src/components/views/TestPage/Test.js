@@ -23,6 +23,8 @@ function Test() {
             case 2: case 3:
                 num += 2 ** 0 * 0;
                 break;
+            default:
+                break;
         }
         switch (answers.type2[1]) {
 
@@ -32,6 +34,8 @@ function Test() {
 
             case 2: case 3:
                 num += 2 ** 1 * 0;
+                break;
+            default:
                 break;
         }
         switch (answers.type3[1]) {
@@ -43,6 +47,8 @@ function Test() {
             case 2: case 3:
                 num += 2 ** 2 * 0;
                 break;
+            default:
+                break;
         }
         switch (answers.type4[1]) {
 
@@ -52,6 +58,8 @@ function Test() {
 
             case 2: case 3:
                 num += 2 ** 3 * 0;
+                break;
+            default:
                 break;
         }
 
