@@ -2,6 +2,7 @@
     font-family: locus_sangsang;
     font-style: normal;
     color: #2B503B;
+    width: 100vw;
 }
 
 .ResultFrame {
@@ -73,4 +74,74 @@
 
 
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    /* .ResultPage {
+
+        width: 100vw;
+    } */
+
+    .ResultFrame {
+        width: 100vw;
+    }
+
+    .ResultImageFrame {
+        width: 100%;
+        height: 462px;
+        font-size: 14px;
+        padding-top: 45px;
+    }
+
+    .ResultTitle {
+        font-size: 18px;
+        box-shadow: inset 0 -13px 0 rgb(235, 188, 21, 0.29);
+    }
+
+    .ResultMiddletext {
+        margin-top: 26px;
+        font-size: 18px;
+    }
+
+    .TypeName {
+        font-size: 30px;
+        padding: 6px 0 6px 0;
+    }
+
+    .TypeImg {
+        height: 224px;
+        padding-bottom: 22px;
+    }
+
+    .ResultPercent {
+        width: 100%;
+        height: 86px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .ResultText {
+        font-size: 16px;
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+@media (max-width: 330px) {
+    .SameMbti {
+        font-size: 12px;
+    }
+
+    .ResultImageFrame {
+        height: 420px;
+    }
+
+    .TypeImg {
+        width: 80%;
+        height: auto;
+        padding-bottom: 22px;
+    }
+
+    .ResultTitle {
+        font-size: 15px;
+        box-shadow: inset 0 -13px 0 rgb(235, 188, 21, 0.29);
+    }
+}
