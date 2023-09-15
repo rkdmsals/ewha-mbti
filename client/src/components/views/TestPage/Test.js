@@ -16,7 +16,7 @@ function Test() {
     const ShowResult = () => {
         //그냥 이때 DB에 냅다 올리기, 나중에 id를 같이 줘서 받아오자 (result에서)
         var num = 1
-        switch (answers.type1[1]) {
+        switch (answers.type1[0]) {
 
             case 0: case 1:
                 num += 2 ** 0 * 1;
@@ -28,7 +28,7 @@ function Test() {
             default:
                 break;
         }
-        switch (answers.type2[1]) {
+        switch (answers.type2[0]) {
 
             case 0: case 1:
                 num += 2 ** 1 * 1;
@@ -40,7 +40,7 @@ function Test() {
             default:
                 break;
         }
-        switch (answers.type3[1]) {
+        switch (answers.type3[0]) {
 
             case 0: case 1:
                 num += 2 ** 2 * 1;
@@ -52,7 +52,7 @@ function Test() {
             default:
                 break;
         }
-        switch (answers.type4[1]) {
+        switch (answers.type4[0]) {
 
             case 0: case 1:
                 num += 2 ** 3 * 1;
