@@ -11,6 +11,8 @@ function Test() {
     // E I N S T F P J
     const [answers, setAnswers] = useState({ "type1": [0, 0,], "type2": [0, 0,], "type3": [0, 0,], "type4": [0, 0,] });
     //결과 페이지 반환
+    const progressBlock = document.querySelector(".ProgressBlock");
+    const progressBar = document.querySelector(".ProgressBar");
     const ShowResult = () => {
         //그냥 이때 DB에 냅다 올리기, 나중에 id를 같이 줘서 받아오자 (result에서)
         var num = 1
@@ -101,19 +103,20 @@ function Test() {
                 break;
             default: break;
         }
-        // console.log(answersArr);
+
         setAnswers(answersArr);
         setPage(page + 1);
+
     }
 
     return (<div className="TestBackground">
-        {page < 7 ? TestData.questions.map((a, idx) =>
+        {page < 13 ? TestData.questions.map((a, idx) =>
             //progressBar 진행상황의 경우, progressBar안에 작은 네모난 요소를 넣어서 버튼 누를 때마다 하나씩 늘어나도록
             //아니면 버튼 누를 때마다 or a.num 정보를 통해 border길이 or 안의 요소 길이 조정가능
             <div className="TestPage" key={idx} style={{ display: page === idx + 1 ? 'flex' : 'none' }}>
                 <div className="TestInner">
                     <div className="ProgressText">{a.num}/12</div>
-                    <div className="ProgressBar">
+                    <div className="ProgressBar"><div className="ProgressBlock " style={{ width: page * 32.2 }}></div>
                     </div>
                     <div className="TestQ">Q.</div>
                     <div className="TestQuestion">{a.content}</div>
@@ -123,7 +126,8 @@ function Test() {
                     <Logo />
                 </div>
             </div>
-        ) : ShowResult()}
+        ) : ShowResult()
+        }
 
     </div >
     )
