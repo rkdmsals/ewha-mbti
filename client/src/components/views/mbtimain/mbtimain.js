@@ -64,10 +64,10 @@ function MbtiMain() {
   return (
     <div className="MbtiMain">
       <div style={{ color:'#3A3A3A'}}>성격유형테스트</div>
-      <div style={{ fontSize: '40px' }}>나와 어울리는</div>
-      <div style={{ fontSize: '40px' }}>이화여자대학교</div>
+      <div>나와 어울리는</div>
+      <div>이화여자대학교</div>
       <div style={{ margin: '0', display: 'inline', marginBottom: '22px' }}>
-        <div style={{ fontSize: '40px',display: 'inline', fontWeight: 'normal', color:'#2E6D4A',}}>건물 <div style={{ fontSize: '40px', display: 'inline', fontWeight: 'normal', paddingRight: '10px'}}>은?</div></div>
+        <div>건물 <div style={{display: 'inline', paddingRight: '10px'}}>은?</div></div>
       </div>
       <ImageSlider />
       <Link to="/button1">
@@ -80,8 +80,8 @@ function MbtiMain() {
         <Route path="/button1" component={TestStart} />
         <Route path="/button2" component={ShareWithFriends} />
       </Routes>
-      <div style={{ marginTop: '50px' }}>
-        <img src="/img/Footer/Footer_logo.png" alt="footer_logo" style={{ width: '96.43px', height: '26.73px' }} />
+      <div>
+        <img src="/img/Footer/Footer_logo.png" alt="footer_logo"/>
       </div>
     </div>
   );
