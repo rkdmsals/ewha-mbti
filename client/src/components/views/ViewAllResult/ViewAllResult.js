@@ -13,7 +13,7 @@ function ViewAllResult() {
                     }))
                     : <div></div>
                 }
-                <footer><button>내 결과로 돌아가기</button></footer>
+                <footer><button onClick={() => window.history.back()}>내 결과로 돌아가기</button></footer>
             </div>
         </div>
     )

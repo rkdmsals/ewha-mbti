@@ -1,7 +1,10 @@
+import { Navigate } from "react-router-dom";
 import "./ResultOthers.css"
+import { useNavigate } from "react-router-dom";
 function ResultOthers() {
     const url = encodeURI(window.location.href);
     const text = '지금 우리 MBTI는?'
+    const navigate = useNavigate();
     const ShareKakao = () => {
 
     }
@@ -44,8 +47,8 @@ function ResultOthers() {
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
             <button className="GoGuideButton">
                 안내 사이트 보러가기</button>
-            <button className="AllTypesButton">모든 유형 보러가기</button>
-            <button className="ReTestButton">테스트 다시하기</button>
+            <button className="AllTypesButton" onClick={() => navigate("/viewAllResult")}>모든 유형 보러가기</button>
+            <button className="ReTestButton" onClick={() => navigate("/")}>테스트 다시하기</button>
         </div >
     )
 }
