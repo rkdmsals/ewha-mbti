@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<MbtiMain />} />
           <Route exact path="/Chemi" element={<Chemistry />} />
           <Route exact path="/test" element={<Test />} />
           <Route exact path="/test/result/:id" element={<Result />} />
