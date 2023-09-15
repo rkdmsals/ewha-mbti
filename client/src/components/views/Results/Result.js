@@ -27,9 +27,13 @@ function Result() {
                     <div className="TAndF"></div>
                     <div className="PAndJ"></div>
                 </div>
-                <div className="ResultText">
-                    {pageData.text}
-                </div>
+                {console.log(pageData.text)};
+                {pageData.text ? pageData.text.map((eachText, idx) =>
+                    <div div className="ResultText" key={idx} >
+                        <div>-</div>
+                        <div className="resultEachText">{eachText}</div>
+                    </div>)
+                    : <div></div>}
                 <Chemistry />
                 <ResultOthers />
                 <Logo />

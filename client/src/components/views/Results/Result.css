@@ -58,6 +58,11 @@
     margin: 10px 10px 10px 10px;
     word-break: keep-all;
     /*단어단위로 끊게끔*/
+    display: flex;
+}
+
+.resultEachText {
+    padding-bottom: 28px;
 }
 
 /* .Circle {
