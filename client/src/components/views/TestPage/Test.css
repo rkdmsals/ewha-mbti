@@ -53,6 +53,8 @@
     margin: 0 auto;
     word-break: keep-all;
     line-height: 1.4;
+
+
 }
 
 .Answer1,
@@ -75,6 +77,25 @@
 }
 
 .Answer2 {
-    background: #ABBFAF;
+    background: rgba(86, 86, 86, 0.18);
     margin-bottom: 50px;
+}
+
+.Answer1:hover,
+.Answer2:hover {
+    background: #ABBFAF;
+}
+
+
+@media screen and (max-width:480px) {
+
+    .TestQuestion {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .Answer1,
+    .Answer2 {
+        width: 85%;
+    }
 }
