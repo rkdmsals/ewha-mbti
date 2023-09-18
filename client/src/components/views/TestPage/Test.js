@@ -116,13 +116,16 @@ function Test() {
             <div className="TestPage" key={idx} style={{ display: page === idx + 1 ? 'flex' : 'none' }}>
                 <div className="TestInner">
                     <div className="ProgressText">{a.num}/12</div>
-                    <div className="ProgressBar"><div className="ProgressBlock " style={{ width: page * 32.2 }}></div>
+                    <div className="ProgressBar">
+                        <div className="ProgressBlock " style={{ width: page * 32.2 }}></div>
                     </div>
-                    <div className="TestQ">Q.</div>
-                    <div className="TestQuestion">{a.content}</div>
-                    {/* 만약 1을 택하면 1, 2를 택하면 2가 배열에 들어가도록 */}
-                    <button className="Answer1" onClick={() => TakeAnswer(1)}>{a.answer1}</button>
-                    <button className="Answer2" onClick={() => TakeAnswer(2)}>{a.answer2}</button>
+                    <div className="Quesiton_container">
+                        <div className="TestQ">Q.</div>
+                        <div className="TestQuestion">{a.content}</div>
+                        {/* 만약 1을 택하면 1, 2를 택하면 2가 배열에 들어가도록 */}
+                        <button className="Answer1" onClick={() => TakeAnswer(1)}>{a.answer1}</button>
+                        <button className="Answer2" onClick={() => TakeAnswer(2)}>{a.answer2}</button>
+                    </div>
                     <Logo />
                 </div>
             </div>

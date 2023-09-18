@@ -6,6 +6,7 @@ import Chemistry from "./components/views/Results/Chemistry";
 import ViewAllResult from "./components/views/ViewAllResult/ViewAllResult";
 import MbtiMain from "./components/views/mbtimain/mbtimain";
 import Test from "./components/views/TestPage/Test";
+import "./components/utilis/font.css"
 
 function App() {
 
