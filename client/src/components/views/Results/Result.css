@@ -77,13 +77,42 @@
     border-width: 35px;
 } */
 
+.AllTypesButton,
+.ReTestButton {
+    display: block;
+    width: 415px;
+    height: 62px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    /* margin: 0 0 33px 25px; */
+    margin: 0 auto;
+    margin-bottom: 33px;
+    margin-left: 25px;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: center;
+    border: 0px;
+}
 
+.AllTypesButton {
+    background: #2E6D4A;
+    color: #F8FFE4;
+}
+
+.AllTypesButton:hover {
+    cursor: pointer;
+}
+
+.ReTestButton {
+    background: #E7E7E7;
+    color: #2E6D4A;
+    margin-bottom: 90px;
+}
+
+.ReTestButton:hover {
+    cursor: pointer;
+}
 
 @media (max-width: 600px) {
-    /* .ResultPage {
-
-        width: 100vw;
-    } */
 
     .ResultFrame {
         width: 100vw;
@@ -128,6 +157,21 @@
         font-size: 16px;
         margin: 10px 10px 10px 10px;
     }
+
+    .AllTypesButton,
+    .ReTestButton {
+        width: 325px;
+        height: 53px;
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        /* margin: 0 0 15px 25px; */
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .ReTestButton {
+        margin-bottom: 90px;
+    }
 }
 
 @media (max-width: 330px) {
@@ -148,5 +192,16 @@
     .ResultTitle {
         font-size: 15px;
         box-shadow: inset 0 -13px 0 rgb(235, 188, 21, 0.29);
+    }
+
+    .AllTypesButton,
+    .ReTestButton {
+        width: 85%;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .ReTestButton {
+        margin-bottom: 90px;
     }
 }
