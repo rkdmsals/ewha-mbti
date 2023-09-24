@@ -11,16 +11,18 @@ function ResultOthers() {
     const ShareKakao = () => {
         //init 안에 API key 변경해서 넣으면 됨
         if (!Kakao.isInitialized()) {
-            Kakao.init('2bd28143574c5b9492e6fa599d43726c');
+            Kakao.init('9ffafc59b49ca4a20ae876b0a1742b22');
         }
         //카카오 메시지 템플릿 기능 이용, 템플릿 생성 후 templateId만 변경하면 됨
-        Kakao.Share.sendCustom({
-            templateId: 98537,
+        Kakao.Share.createCustomButton({
+            container: '#KakaoButton',
+            templateId: 98548,
             templateArgs: {
                 title: '나와 잘어울리는 이화여대 건물은?',
                 description: '링크에서 테스트해보기',
             },
         });
+
     }
 
     const ShareInstagram = async () => {
@@ -100,11 +102,12 @@ function ResultOthers() {
         <div className="ResultOthers">
             <div className="ShareText"><img src="/img/ResultPage/Buttons/share.png"></img><span>내 결과 공유하기</span></div>
             <div className="ShareButtons">
-                <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/kakao.png"
-                    alt="kakaotalk"
-                    className="Images"
-                    onClick={ShareKakao} /></div>
+                <div className="SNSButton" id="KakaoButton" onClick={ShareKakao}>
+                    <img
+                        src="/img/ResultPage/Buttons/kakao.png"
+                        alt="kakaotalk"
+                        className="Images"
+                    /></div>
                 <div className="SNSButton"><img
                     src="/img/ResultPage/Buttons/instagram.png"
                     alt="instagram"
