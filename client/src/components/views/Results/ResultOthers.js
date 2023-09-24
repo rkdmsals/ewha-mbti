@@ -22,6 +22,16 @@ function ResultOthers() {
             },
         });
     }
+
+    const ShareInstagram = () => {
+        const currentURL = window.location.href;
+
+        const instagramStoryURL = `https://www.instagram.com/add_to_story?url=${encodeURIComponent(currentURL)}`;
+
+        window.open(instagramStoryURL, '_blank');
+    };
+
+    /*
     //https://developers.facebook.com/docs/instagram/sharing-to-stories
     const ShareInstagram = () => {
         window.fbAsyncInit = function () {
@@ -58,6 +68,8 @@ function ResultOthers() {
         // 전달할 URL
         window.open("http://www.facebook.com/sharer/sharer.php?href=" + url);
     }
+
+    */
     const ShareTwitter = () => {
         window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url)
     }
