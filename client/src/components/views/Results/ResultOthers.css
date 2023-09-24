@@ -35,6 +35,10 @@
     /* margin-right: auto; */
 }
 
+.SNSButton:hover {
+    cursor: pointer;
+}
+
 .Images {
     width: 60%;
     margin: auto
@@ -80,10 +84,18 @@
     color: #F8FFE4;
 }
 
+.AllTypesButton:hover {
+    cursor: pointer;
+}
+
 .ReTestButton {
     background: #E7E7E7;
     color: #2E6D4A;
     margin-bottom: 90px;
+}
+
+.ReTestButton:hover {
+    cursor: pointer;
 }
 
 @media(max-width:600px) {

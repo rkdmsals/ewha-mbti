@@ -22,6 +22,35 @@ function ResultOthers() {
             },
         });
     }
+
+    const ShareInstagram = async () => {
+        // 서버에 Instagram 스토리 URL을 요청
+        try {
+            const response = await fetch('/shareInstagramStory'); // 서버 엔드포인트
+            const data = await response.json();
+
+            if (response.status === 200) {
+                // Instagram 스토리 URL 가져오기 성공
+                const instagramStoryURL = data.storyURL;
+                // Instagram 스토리 URL을 사용하여 Instagram 스토리를 엽니다.
+                window.open(instagramStoryURL, '_blank');
+            } else {
+                // 오류 처리 로직
+                console.error('Instagram 스토리 URL 요청 오류:', data.error);
+            }
+        } catch (error) {
+            console.error('Instagram 스토리 URL 요청 중에 오류 발생:', error);
+        }
+    };
+    /*
+        const ShareInstagram = () => {
+            const currentURL = window.location.href;
+    
+            const instagramStoryURL = `https://www.instagram.com/add_to_story?url=${encodeURIComponent(currentURL)}`;
+            window.open(instagramStoryURL, '_blank');
+        };
+    */
+    /*
     //https://developers.facebook.com/docs/instagram/sharing-to-stories
     const ShareInstagram = () => {
         window.fbAsyncInit = function () {
@@ -58,6 +87,8 @@ function ResultOthers() {
         // 전달할 URL
         window.open("http://www.facebook.com/sharer/sharer.php?href=" + url);
     }
+
+    */
     const ShareTwitter = () => {
         window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url)
     }
