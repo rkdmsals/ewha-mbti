@@ -127,8 +127,7 @@ function ResultOthers() {
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
             <button className="GoGuideButton">
                 안내 사이트 보러가기</button>
-            <button className="AllTypesButton" onClick={() => navigate("/viewAllResult")}>모든 유형 보러가기</button>
-            <button className="ReTestButton" onClick={() => navigate("/")}>테스트 다시하기</button>
+
         </div >
     )
 }
