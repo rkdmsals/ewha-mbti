@@ -131,3 +131,36 @@
     height: 22.73px;
   }
 }
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  .MbtiMain div:nth-child(2),
+  .MbtiMain div:nth-child(3),
+  .MbtiMain div:nth-child(4) {
+    font-size: 36px;
+  }
+
+  .MbtiMain .slider-image {
+    width: 281.97px;
+    height: 198px;
+    position: relative;
+    top: -10px;
+  }
+
+  .MbtiMainButton {
+    margin-top: 15px;
+    font-size: 90%;
+    padding: 8px 0;
+    width: 325px;
+    height: 53px;
+    position: relative;
+    top: -30px;
+  }
+
+  .MbtiMain img[src$="/img/Footer/Footer_logo.png"] {
+    margin-top: -40px;
+    width: 82px;
+    height: 22.73px;
+  }
+}
+=======
+}
+
