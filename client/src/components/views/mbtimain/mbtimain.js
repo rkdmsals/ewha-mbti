@@ -55,8 +55,17 @@ function MbtiMain() {
   }
 
   function ShareWithFriends() {
-    navigator.clipboard.writeText(window.location.href);
-    alert("링크가 복사되었습니다!")
+    try {
+      navigator.clipboard.writeText(window.location.href);
+      alert("링크가 복사되었습니다!")
+    } catch (error) {
+      const textArea = document.createElement('textarea');
+      document.body.appendChild(textArea);
+      textArea.value = window.location.href;
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+    }
   }
 
   return (

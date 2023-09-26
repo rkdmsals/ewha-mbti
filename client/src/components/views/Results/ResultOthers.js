@@ -110,7 +110,17 @@ function ResultOthers() {
         window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url)
     }
     const ShareLink = () => {
-        navigator.clipboard.writeText(url);
+        try {
+            navigator.clipboard.writeText(url);
+            alert("링크가 복사되었습니다!")
+        } catch (error) {
+            const textArea = document.createElement('textarea');
+            document.body.appendChild(textArea);
+            textArea.value = url;
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+        }
     }
 
     return (
