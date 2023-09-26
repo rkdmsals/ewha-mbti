@@ -51,6 +51,10 @@ footer {
     bottom: 0;
 }
 
+.EachResultContents {
+    height: 374px;
+}
+
 @media(max-width:600px) {
     .EachResult {
         width: 339px;
@@ -81,6 +85,10 @@ footer {
     .ViewName {
         font-size: 38px;
     }
+
+    .EachResultContents {
+        height: 308px;
+    }
 }
 
 @media(max-width:330px) {
@@ -105,5 +113,9 @@ footer {
 
     .ViewName {
         font-size: 30px;
+    }
+
+    .EachResultContents {
+        height: 238px;
     }
 }

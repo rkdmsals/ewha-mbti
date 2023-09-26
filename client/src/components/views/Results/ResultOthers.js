@@ -11,17 +11,48 @@ function ResultOthers() {
     const ShareKakao = () => {
         //init 안에 API key 변경해서 넣으면 됨
         if (!Kakao.isInitialized()) {
-            Kakao.init('2bd28143574c5b9492e6fa599d43726c');
+            Kakao.init('9ffafc59b49ca4a20ae876b0a1742b22');
         }
         //카카오 메시지 템플릿 기능 이용, 템플릿 생성 후 templateId만 변경하면 됨
-        Kakao.Share.sendCustom({
-            templateId: 98537,
+        Kakao.Share.createCustomButton({
+            container: '#KakaoButton',
+            templateId: 98548,
             templateArgs: {
                 title: '나와 잘어울리는 이화여대 건물은?',
                 description: '링크에서 테스트해보기',
             },
         });
+
     }
+
+    const ShareInstagram = async () => {
+        // 서버에 Instagram 스토리 URL을 요청
+        try {
+            const response = await fetch('/shareInstagramStory'); // 서버 엔드포인트
+            const data = await response.json();
+
+            if (response.status === 200) {
+                // Instagram 스토리 URL 가져오기 성공
+                const instagramStoryURL = data.storyURL;
+                // Instagram 스토리 URL을 사용하여 Instagram 스토리를 엽니다.
+                window.open(instagramStoryURL, '_blank');
+            } else {
+                // 오류 처리 로직
+                console.error('Instagram 스토리 URL 요청 오류:', data.error);
+            }
+        } catch (error) {
+            console.error('Instagram 스토리 URL 요청 중에 오류 발생:', error);
+        }
+    };
+    /*
+        const ShareInstagram = () => {
+            const currentURL = window.location.href;
+    
+            const instagramStoryURL = `https://www.instagram.com/add_to_story?url=${encodeURIComponent(currentURL)}`;
+            window.open(instagramStoryURL, '_blank');
+        };
+    */
+    /*
     //https://developers.facebook.com/docs/instagram/sharing-to-stories
     const ShareInstagram = () => {
         window.fbAsyncInit = function () {
@@ -58,6 +89,8 @@ function ResultOthers() {
         // 전달할 URL
         window.open("http://www.facebook.com/sharer/sharer.php?href=" + url);
     }
+
+    */
     const ShareTwitter = () => {
         window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url)
     }
@@ -69,11 +102,12 @@ function ResultOthers() {
         <div className="ResultOthers">
             <div className="ShareText"><img src="/img/ResultPage/Buttons/share.png"></img><span>내 결과 공유하기</span></div>
             <div className="ShareButtons">
-                <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/kakao.png"
-                    alt="kakaotalk"
-                    className="Images"
-                    onClick={ShareKakao} /></div>
+                <div className="SNSButton" id="KakaoButton" onClick={ShareKakao}>
+                    <img
+                        src="/img/ResultPage/Buttons/kakao.png"
+                        alt="kakaotalk"
+                        className="Images"
+                    /></div>
                 <div className="SNSButton"><img
                     src="/img/ResultPage/Buttons/instagram.png"
                     alt="instagram"
@@ -93,8 +127,7 @@ function ResultOthers() {
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
             <button className="GoGuideButton">
                 안내 사이트 보러가기</button>
-            <button className="AllTypesButton" onClick={() => navigate("/viewAllResult")}>모든 유형 보러가기</button>
-            <button className="ReTestButton" onClick={() => navigate("/")}>테스트 다시하기</button>
+
         </div >
     )
 }
