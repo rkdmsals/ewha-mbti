@@ -25,12 +25,26 @@ function ResultOthers() {
 
     }
 
+    //이미지 저장 함수
+    const saveImage = () => {
+        const imageUrl = '/img/ResultPage/buttons/link.png'; // (임시)이미지 파일 경로
+        const a = document.createElement('a');
+        a.href = imageUrl;
+        a.download = 'EWHA_building_test.png';
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    };
+
+
+    /*
     const ShareInstagram = async () => {
         // 서버에 Instagram 스토리 URL을 요청
         try {
             const response = await fetch('/shareInstagramStory'); // 서버 엔드포인트
             const data = await response.json();
-
+ 
             if (response.status === 200) {
                 // Instagram 스토리 URL 가져오기 성공
                 const instagramStoryURL = data.storyURL;
@@ -44,6 +58,7 @@ function ResultOthers() {
             console.error('Instagram 스토리 URL 요청 중에 오류 발생:', error);
         }
     };
+    */
     /*
         const ShareInstagram = () => {
             const currentURL = window.location.href;
@@ -63,33 +78,33 @@ function ResultOthers() {
                 version: 'v18.0'
             });
         };
-
+ 
         // var intent = ("com.instagram.share.ADD_TO_STORY");
-
+ 
         // // Attach your App ID to the intent
         // var sourceApplication = "1397734924482042"; // This is your application's FB ID
         // intent.putExtra("source_application", sourceApplication);
-
+ 
         // // Attach your image to the intent from a URI
         // var backgroundAssetUri = Uri.parse("/img/auditorium.png");
         // intent.setDataAndType(backgroundAssetUri, MEDIA_TYPE_JPEG);
-
+ 
         // // Grant URI permissions for the image
         // intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-
+ 
         // // Instantiate an activity
         // var activity = getActivity();
-
+ 
         // // Verify that the activity resolves the intent and start it
         // if (activity.getPackageManager().resolveActivity(intent, 0) != null) {
         //     activity.startActivityForResult(intent, 0);
         // }
         // window.open("https://api.instagram.com/oauth")
-
+ 
         // 전달할 URL
         window.open("http://www.facebook.com/sharer/sharer.php?href=" + url);
     }
-
+ 
     */
     const ShareTwitter = () => {
         window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url)
@@ -118,11 +133,6 @@ function ResultOthers() {
                         alt="kakaotalk"
                         className="Images"
                     /></div>
-                <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/instagram.png"
-                    alt="instagram"
-                    className="Images"
-                    onClick={ShareInstagram} /></div>
                 <div className="SNSButton"> <img
                     src="/img/ResultPage/Buttons/twitter.png"
                     alt="twitter"
@@ -133,6 +143,11 @@ function ResultOthers() {
                     alt="link"
                     className="Images"
                     onClick={ShareLink} /></div>
+                <div className="ImageSaveButton"><img
+                    src="/img/ResultPage/Buttons/instagram.png"
+                    alt="imageSave"
+                    className="Images"
+                    onClick={saveImage} /></div>
             </div>
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
             <button className="GoGuideButton">
