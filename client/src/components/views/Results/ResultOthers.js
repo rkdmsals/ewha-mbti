@@ -133,17 +133,12 @@ function ResultOthers() {
                         alt="kakaotalk"
                         className="Images"
                     /></div>
-                <div className="SNSButton"> <img
-                    src="/img/ResultPage/Buttons/twitter.png"
-                    alt="twitter"
-                    className="Images"
-                    onClick={ShareTwitter} /></div>
                 <div className="SNSButton"><img
                     src="/img/ResultPage/Buttons/link.png"
                     alt="link"
                     className="Images"
                     onClick={ShareLink} /></div>
-                <div className="ImageSaveButton"><img
+                <div className="SNSButton"><img
                     src="/img/ResultPage/Buttons/instagram.png"
                     alt="imageSave"
                     className="Images"
