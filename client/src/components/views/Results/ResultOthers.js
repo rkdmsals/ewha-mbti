@@ -1,9 +1,13 @@
-import { Navigate } from "react-router-dom";
 import "./ResultOthers.css"
 import { useNavigate } from "react-router-dom";
 import Kakao from "./Kakao";
-import FB from "./Facebook";
+import resultData from "./results.json";
+import { useParams } from "react-router-dom";
+
 function ResultOthers() {
+
+    let params = useParams();
+    let pageData = resultData.results[params.id - 1];
 
     const url = encodeURI(window.location.href);
     const text = '지금 우리 MBTI는?'
@@ -27,7 +31,7 @@ function ResultOthers() {
 
     //이미지 저장 함수
     const saveImage = () => {
-        const imageUrl = '/img/ResultPage/buttons/link.png'; // (임시)이미지 파일 경로
+        const imageUrl = pageData.shareImg_path;
         const a = document.createElement('a');
         a.href = imageUrl;
         a.download = 'EWHA_building_test.png';
@@ -139,7 +143,7 @@ function ResultOthers() {
                     className="Images"
                     onClick={ShareLink} /></div>
                 <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/instagram.png"
+                    src="/img/ResultPage/Buttons/instagram.png" // 이미지는 임시이미지
                     alt="imageSave"
                     className="Images"
                     onClick={saveImage} /></div>
