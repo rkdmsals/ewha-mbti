@@ -10,7 +10,7 @@ function ResultOthers() {
     let pageData = resultData.results[params.id - 1];
 
     const url = encodeURI(window.location.href);
-    const text = '지금 우리 MBTI는?'
+    const text = '나와 잘어울리는 이화여대 건물은?'
     const navigate = useNavigate();
     const ShareKakao = () => {
         //init 안에 API key 변경해서 넣으면 됨
@@ -138,15 +138,16 @@ function ResultOthers() {
                         className="Images"
                     /></div>
                 <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/link.png"
-                    alt="link"
-                    className="Images"
-                    onClick={ShareLink} /></div>
-                <div className="SNSButton"><img
                     src="/img/ResultPage/Buttons/instagram.png" // 이미지는 임시이미지
                     alt="imageSave"
                     className="Images"
                     onClick={saveImage} /></div>
+                <div className="SNSButton"><img
+                    src="/img/ResultPage/Buttons/link.png"
+                    alt="link"
+                    className="Images"
+                    onClick={ShareLink} /></div>
+
             </div>
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
             <button className="GoGuideButton">
