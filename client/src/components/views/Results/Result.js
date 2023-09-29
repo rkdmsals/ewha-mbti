@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
 function Result() {
+
     const location = useLocation();
     let params = useParams();
     let pageData = resultData.results[params.id - 1];
@@ -55,6 +56,9 @@ function Result() {
                     <img className="ResultPercentEach" src={`/img/ResultSection/type3_section` + type3 + '.png'} />
                     <img className="ResultPercentEach" src={`/img/ResultSection/type4_section` + type4 + '.png'} />
                 </div>
+                <div className="ResultPercentText">
+                    <div className="PercentTextEach ColorRed">외향</div><div className="PercentTextEach ColorYellow">직관</div><div className="PercentTextEach ColorGreen">감성</div><div className="PercentTextEach ColorBlues">계획</div>
+                </div>
                 {pageData.text ? pageData.text.map((eachText, idx) =>
                     <div div className="ResultText" key={idx} >
                         <div>-</div>
@@ -65,9 +69,9 @@ function Result() {
                 <div className="ChemistryPage">
                     <div className="Chemistries">
                         <div className="ChemiTitle">환상의 케미</div>
-                        <img className="ChemiImg" alt="환상의 케미 이미지" src={pageData.img_path}></img>
-                        <div className="ChemiMiddle">자유로운 영혼</div>
-                        <div className="ChemiName">조형예술관</div>
+                        <img className="ChemiImg" alt="환상의 케미 이미지" src={pageData.BestImg}></img>
+                        <div className="ChemiMiddle">{pageData.BestSubname}</div>
+                        <div className="ChemiName">{pageData.BestChemi}</div>
                     </div>
                     <div className="Chemistries">
                         <div className="ChemiTitle">환장의 케미</div>
