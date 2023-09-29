@@ -13,6 +13,10 @@ function Test() {
     //결과 페이지 반환
     const progressBlock = document.querySelector(".ProgressBlock");
     const progressBar = document.querySelector(".ProgressBar");
+    var progressPercent = 32.2;
+    if (window.innerWidth < 465) {
+        progressPercent = window.innerWidth * 7.5 / 100;
+    }
     const ShowResult = () => {
         //그냥 이때 DB에 냅다 올리기, 나중에 id를 같이 줘서 받아오자 (result에서)
         var num = 1
@@ -153,7 +157,7 @@ function Test() {
                 <div className="TestInner">
                     <div className="ProgressText">{a.num}/12</div>
                     <div className="ProgressBar">
-                        <div className="ProgressBlock " style={{ width: page * 32.2 }}></div>
+                        <div className="ProgressBlock " style={{ width: page * progressPercent }}></div>
                     </div>
                     <div className="Quesiton_container">
                         <div className="TestQ">Q.</div>
