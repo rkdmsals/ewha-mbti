@@ -94,4 +94,16 @@
     .Answer2 {
         width: 85%;
     }
+
+    .ProgressBar {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+
+    .ProgressBlock {
+        width: 7.5%;
+        height: 100%;
+        background-color: #2E6D4A;
+    }
 }
