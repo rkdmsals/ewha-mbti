@@ -54,7 +54,7 @@
 
 .GoGuideButton {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
     width: 163px;
     padding: 9px 0px;
@@ -66,6 +66,8 @@
     color: #F8FFE4;
     text-align: center;
     /* vertical-align: middle; */
+    font-family: "UhBee_ZZIBA";
+    font-style: normal;
 }
 
 button:hover,

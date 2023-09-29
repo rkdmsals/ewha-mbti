@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "UhBee_ZZIBA";
+    src: url("./UhBeeZZIBA-Regular.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
 * {
     font-family: "locus_sangsang", "Pretendard Variable", Pretendard, -apple-system,
         BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
