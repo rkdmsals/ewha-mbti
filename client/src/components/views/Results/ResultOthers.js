@@ -1,5 +1,5 @@
 import "./ResultOthers.css"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Kakao from "./Kakao";
 import resultData from "./results.json";
 import { useParams } from "react-router-dom";
@@ -150,8 +150,8 @@ function ResultOthers() {
 
             </div>
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
-            <button className="GoGuideButton">
-                안내 사이트 보러가기</button>
+            <Link to={'http://ewhaianrenewalinfo.com'} className="GoGuideButton">
+                안내 사이트 보러가기</Link>
 
         </div >
     )

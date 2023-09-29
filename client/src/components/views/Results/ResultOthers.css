@@ -55,17 +55,23 @@
 .GoGuideButton {
     position: relative;
     font-size: 14px;
+    display: block;
     width: 163px;
-    height: 38px;
+    padding: 9px 0px;
+    /* height: 38px; */
     top: -118px;
     left: 248px;
     border-radius: 26px;
     background: #402C33;
     color: #F8FFE4;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
+button:hover,
+.GoGuideButton:hover {
+    transform: scale(1.02);
+}
 
 @media(max-width:600px) {
     .ShareButtons {
