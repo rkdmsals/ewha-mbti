@@ -79,7 +79,7 @@ function Result() {
                 </div>
                 {pageData.text ? pageData.text.map((eachText, idx) =>
                     <div div className="ResultText" key={idx} >
-                        <div>-</div>
+                        {/* <div>-</div> */}
                         <div className="resultEachText">{eachText}</div>
                     </div>)
                     : <div></div>}
