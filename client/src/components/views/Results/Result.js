@@ -16,7 +16,25 @@ function Result() {
     let type2 = location.state[1]
     let type3 = location.state[2]
     let type4 = location.state[3]
-    // console.log(params.id)
+    var typename1, typename2, typename3, typename4;
+    if (params.id % 2 == 1) {
+        typename1 = "외향"
+    } else {
+        typename1 = "내향"
+    }
+    if ((params.id / 2) % 2 == 1) {
+        typename2 = "상상"
+    } else {
+        typename3 = "직관"
+    } if ((params.id / 4) % 2 == 1) {
+        typename3 = "이성"
+    } else {
+        typename2 = "감성"
+    } if ((params.id / 8) % 2 == 1) {
+        typename4 = "즉흥"
+    } else {
+        typename4 = "계획"
+    }
     // let captureDiv = document.querySelector('.ResultImageCapture');  
     const navigate = useNavigate();
     // function DownImg() {
@@ -57,7 +75,7 @@ function Result() {
                     <img className="ResultPercentEach" src={`/img/ResultSection/type4_section` + type4 + '.png'} />
                 </div>
                 <div className="ResultPercentText">
-                    <div className="PercentTextEach" style={{ color: "#D28A8A" }}>외향</div><div className="PercentTextEach" style={{ color: "#FBC376" }}>직관</div><div className="PercentTextEach " style={{ color: "#93CCA0" }}>감성</div><div className="PercentTextEach" style={{ color: "#96C5D7" }}>계획</div>
+                    <div className="PercentTextEach" style={{ color: "#D28A8A" }}>{typename1}</div><div className="PercentTextEach" style={{ color: "#FBC376" }}>{typename2}</div><div className="PercentTextEach " style={{ color: "#93CCA0" }}>{typename3}</div><div className="PercentTextEach" style={{ color: "#96C5D7" }}>{typename4}</div>
                 </div>
                 {pageData.text ? pageData.text.map((eachText, idx) =>
                     <div div className="ResultText" key={idx} >
