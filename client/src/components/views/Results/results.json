@@ -35,7 +35,7 @@
         },
         {
             "name": "체육관",
-            "img_path": "/img/ResultPage/Building/Physical.png",
+            "img_path": "/img/ResultPage/Building/physical.png",
             "subname": "자유로운 영혼",
             "text": [],
             "BestChemi": "진선미관",
@@ -139,7 +139,7 @@
             "text": [],
             "BestChemi": "체육관",
             "BestSubname": "엄.근.진",
-            "BestImg": "/img/ResultPage/Building/Physical.png",
+            "BestImg": "/img/ResultPage/Building/physical.png",
             "WorstChemi": "",
             "WorstImg": ""
         },
