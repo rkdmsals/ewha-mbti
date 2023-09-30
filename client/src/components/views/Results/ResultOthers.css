@@ -40,7 +40,8 @@
 }
 
 .Images {
-    width: 60%;
+    width: 50%;
+    max-height: 60%;
     margin: auto
 }
 

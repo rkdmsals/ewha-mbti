@@ -138,7 +138,7 @@ function ResultOthers() {
                         className="Images"
                     /></div>
                 <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/instagram.png" // 이미지는 임시이미지
+                    src="/img/ResultPage/Buttons/ImageDown.png" // 이미지는 임시이미지
                     alt="imageSave"
                     className="Images"
                     onClick={saveImage} /></div>
