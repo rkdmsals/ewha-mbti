@@ -17,6 +17,7 @@
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/auditorium.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
@@ -34,6 +35,7 @@
             "BestSubname": "",
             "BestImg": "/img/ResultPage/Building/posco.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
@@ -50,6 +52,7 @@
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/jinseonmi.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
@@ -69,12 +72,13 @@
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/buisness.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "학생문화관",
             "img_path": "/img/ResultPage/Building/student_union.png",
-            "subname": "자유로운 영혼",
+            "subname": "쉼터",
             "text": [
                 "벗에게 추천하는 이화여대 건물은 바로 학생문화관입니다!",
                 "학생문화관은 다양한 벗들을 만나는 걸 좋아하는 벗에게 어울리는 멋진 장소랍니다.",
@@ -87,6 +91,7 @@
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/library.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
@@ -105,6 +110,7 @@
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/education.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
@@ -123,6 +129,7 @@
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/helen.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
@@ -131,104 +138,162 @@
             "subname": "자유로운 영혼",
             "text": [
                 "벗에게 추천하는 이화여대 건물은 바로 기숙사입니다!",
-                "기숙사는 편안한 공간과 아늑한 분위기로, 휴식과 편안함을 제공하는 곳입니다.",
+                "기숙사는 편안한 공간과 아늑한 분위기로, 휴식과 편안함을 제공하는 장소입니다.",
                 "기숙사에서는 다른 학생들과의 교류와 친목을 즐기는 것을 좋아하는 벗들을 많이 만날 수 있어요.",
-                "자신만의 공간을 꾸미며 창의적인 아이디어를 실현하며, 다양한 예술 활동을 통해 자신을 표현하는 벗이군요.",
                 "함께 공간을 나누고 예술적인 창작물을 공유하며, 학교 생활을 더욱 풍부하고 유익하게 만들 수 있을 거에요.",
+                "",
                 "기숙사에서 벗들과 함께 나누는 소중한 시간들을 모아 개성을 표현하고 성장할 수 있는 환경을 찾는다면 이화이언에서 공유해주세요!"
             ],
             "BestChemi": "ECC",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/ecc.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "포스코관",
             "img_path": "/img/ResultPage/Building/posco.png",
             "subname": "자유로운 영혼",
-            "text": [],
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 포스코관입니다!",
+                "포스코관은 --하는 멋진 장소랍니다",
+                "포스코관에서는 다양한 전공의 벗들과 함께 목표를 위해 최선을 다할 수 있을 거예요",
+                "",
+                "포스코관에서 보낸 시간들을 이화이언에도 함께 나누어봐요!"
+            ],
             "BestChemi": "종합과학관",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/science.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "중앙도서관",
             "img_path": "/img/ResultPage/Building/library.png",
             "subname": "자유로운 영혼",
-            "text": [],
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 중앙도서관입니다!",
+                "중앙도서관은 지식과 정보의 보고로, 벗의 논리적이고 분석적인 호기심과 의문을 충분히 해소해 줄 수 있는 장소랍니다.",
+                "지식을 추구하고, 자신의 목표를 달성하기 위해 꾸준한 학습과 연구를 통해 스스로를 계발하는 것을 좋아하는 벗에게 좋은 장소가 될 거예요",
+                "중앙도서관에서는 자신만의 조용한 공간을 찾을 수 있고 개념을 탐구하고 새로운 아이디어를 발전시키는 데 집중할 수 있을 거예요",
+                "중앙도서관에서 만나는 흥미로운 정보들을 이화이언에서도 공유해주세요!"
+            ],
             "BestChemi": "학생문화관",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/student_union.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "경영관",
             "img_path": "/img/ResultPage/Building/buisness.png",
             "subname": "엄.근.진",
-            "text": [],
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 경영관입니다!",
+                "경영관은 다양한 경영 전공을 들어볼 수 있는 장소랍니다",
+                "CEO처럼 공과 사를 잘 구분하고 일할 때 잘못된 부분을 잘 짚어주는 벗!",
+                "경영관에서는 다양한 벗들과 의견을 나누면서 벗의 계획을 좋아하는 벗들을 만날 수 있을 거예요",
+                "이화이언에서도 벗의 의견을 들어볼 수 있다면 좋겠네요!"
+            ],
             "BestChemi": "공학관",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/engineering.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "진선미관",
             "img_path": "/img/ResultPage/Building/jinseonmi.png",
             "subname": "자유로운 영혼",
-            "text": [],
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 진선미관입니다!",
+                "진선미관은 학생들뿐 아니라 많은 교수님들이 이용하는 장소랍니다",
+                "진선미관에서 벗들과 대화하며 맛있는 학식을 즐겨보세요",
+                "맛있는 학식이 나오는 날에는 이화이언에도 공유해주세요!"
+            ],
             "BestChemi": "체육관",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/physical.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "교육관 ",
             "img_path": "/img/ResultPage/Building/education.png",
             "subname": "자유로운 영혼",
-            "text": [],
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 교육관입니다!",
+                "교육관은 리더쉽을 가진 벗들이 많은 공간이랍니다",
+                "다른 사람의 모범이 되려고 노력하는 벗",
+                "교육관에서는 다양한 형태의 리더쉽을 가진 벗들과 소통하며 벗이 생각하지 못했던 부분들을 채울 수 있을 거예요",
+                "다른 벗들에게 알려주고 싶은 것이 있다면 이화이언에서도 의견을 공유해주세요!"
+            ],
             "BestChemi": "조형예술관",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/art_design.png",
-            "WorstChemi": "",
-            "WorstImg": ""
+            "WorstChemi": "체육관",
+            "WorstSubname": "",
+            "WorstImg": "/img/ResultPage/Building/physical.png"
         },
         {
             "name": "대강당",
             "img_path": "/img/ResultPage/Building/auditorium.png",
-            "subname": "자유로운 영혼",
-            "text": [],
+            "subname": "엄.근.진",
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 대강당입니다!",
+                "대강당은 다양한 벗들의 공연이나 채플을 들을 수 있는 공간이랍니다",
+                "자신의 감정과 다른 사람의 필요에 민감하게 반응하면서도 자신만의 고요하고 미적인 방식으로 다른 사람들을 포용해주는 벗!",
+                "다른 벗들을 포용해주는 모습이 대강당과도 잘 어울리네요",
+                "대강당에서는 다양한 벗들과 함꼐 공연을 감상, 혹은 채플을 들으며 내적 친밀감을 쌓을 수 있을 거예요",
+                "벗만의 섬세하고 정교한 세계관을 이화이언에서도 공유해주세요!"
+            ],
             "BestChemi": "법학관",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/law.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "ECC",
             "img_path": "/img/ResultPage/Building/ecc.png",
             "subname": "자유로운 영혼",
-            "text": [],
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 ECC입니다!",
+                "ECC는 정문 근처에 있어 다양한 벗들이 이용하는 공간이랍니다",
+                "다른 사람들에게 관심과 나눔을 아끼지 않는 벗!",
+                "ECC에서는 길을 잃은 새내기처럼 벗의 따뜻한 관심을 필요로 하는 벗들을 만날 수 있을 거예요",
+                "이화이언도 벗의 따뜻한 조언을 받을 수 있다면 좋겠어요!"
+            ],
             "BestChemi": "기숙사",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/dormitory.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         },
         {
             "name": "헬렌관",
             "img_path": "/img/ResultPage/Building/helen.png",
             "subname": "자유로운 영혼",
-            "text": [],
+            "text": [
+                "벗에게 추천하는 이화여대 건물은 바로 헬렌관입니다!",
+                "헬렌관은 간호학과 수업이 풍성하게 열리는 곳으로, 벗들과 함께하는 의료적 관심과 봉사의 순간들을 만끽할 수 있는 장소랍니다",
+                "따뜻하고 섬세한 마음으로 주위 사람들을 돌보는 벗!",
+                "헬렌관에서 벗의 배려심과 봉사정신을 펼칠 수 있을 거예요",
+                "벗과 함께라면 따뜻한 벗의 배려에 마음이 녹아내릴 거예요",
+                "이화이언에서도 벗의 따뜻한 마음을 느낄 수 있으면 좋곘네요!"
+            ],
             "BestChemi": "음악관",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/music.png",
             "WorstChemi": "",
+            "WorstSubname": "",
             "WorstImg": ""
         }
     ]
