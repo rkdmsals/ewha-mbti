@@ -1,5 +1,5 @@
 import "./ResultOthers.css"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Kakao from "./Kakao";
 import resultData from "./results.json";
 import { useParams } from "react-router-dom";
@@ -138,7 +138,7 @@ function ResultOthers() {
                         className="Images"
                     /></div>
                 <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/instagram.png" // 이미지는 임시이미지
+                    src="/img/ResultPage/Buttons/ImageDown.png" // 이미지는 임시이미지
                     alt="imageSave"
                     className="Images"
                     onClick={saveImage} /></div>
@@ -150,8 +150,8 @@ function ResultOthers() {
 
             </div>
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
-            <button className="GoGuideButton">
-                안내 사이트 보러가기</button>
+            <Link to={'http://ewhaianrenewalinfo.com'} className="GoGuideButton">
+                안내 사이트 보러가기</Link>
 
         </div >
     )

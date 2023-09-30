@@ -57,7 +57,7 @@ function Result() {
                     <img className="ResultPercentEach" src={`/img/ResultSection/type4_section` + type4 + '.png'} />
                 </div>
                 <div className="ResultPercentText">
-                    <div className="PercentTextEach ColorRed">외향</div><div className="PercentTextEach ColorYellow">직관</div><div className="PercentTextEach ColorGreen">감성</div><div className="PercentTextEach ColorBlues">계획</div>
+                    <div className="PercentTextEach" style={{ color: "#D28A8A" }}>외향</div><div className="PercentTextEach" style={{ color: "#FBC376" }}>직관</div><div className="PercentTextEach " style={{ color: "#93CCA0" }}>감성</div><div className="PercentTextEach" style={{ color: "#96C5D7" }}>계획</div>
                 </div>
                 {pageData.text ? pageData.text.map((eachText, idx) =>
                     <div div className="ResultText" key={idx} >
