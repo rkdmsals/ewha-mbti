@@ -22,7 +22,7 @@
   "main": "server.js",
   "scripts": {
     "start": "cd client && npm start",
-    "build": "react-scripts build",
+    "build": "cd client && react-scripts build",
     "test": "react-scripts test",
     "back": "node server/server.js",
     "backend": "nodemon server/server.js",
