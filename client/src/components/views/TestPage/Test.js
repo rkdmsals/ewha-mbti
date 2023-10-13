@@ -3,7 +3,6 @@ import TestData from "./questions.json";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Logo from "../../Footer/Logo";
-import axios from "axios";
 function Test() {
 
     const navigate = useNavigate();
