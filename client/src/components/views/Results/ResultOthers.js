@@ -43,8 +43,8 @@ function ResultOthers() {
 
     const ShareLink = () => {
         try {
-            navigator.clipboard.writeText(url);
-            alert("링크가 복사되었습니다!")
+            navigator.clipboard.writeText(url).then(res => { alert("링크가 복사되었습니다!") })
+
         } catch (error) {
             const textArea = document.createElement('textarea');
             document.body.appendChild(textArea);

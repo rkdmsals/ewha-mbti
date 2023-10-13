@@ -5,22 +5,22 @@ import './mtmainstyle.css';
 function MbtiMain() {
   const navigate = useNavigate();
   const images = [
+    '/img/ResultPage/Building/art_design.png',
     '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
-    '/img/ResultPage/Building/auditorium.png',
+    '/img/ResultPage/Building/business.png',
+    '/img/ResultPage/Building/dormitory.png',
+    '/img/ResultPage/Building/ecc.png',
+    '/img/ResultPage/Building/education.png',
+    '/img/ResultPage/Building/engineering.png',
+    '/img/ResultPage/Building/helen.png',
+    '/img/ResultPage/Building/jinseonmi.png',
+    '/img/ResultPage/Building/law.png',
+    '/img/ResultPage/Building/library.png',
+    '/img/ResultPage/Building/music.png',
+    '/img/ResultPage/Building/physical.png',
+    '/img/ResultPage/Building/posco.png',
+    '/img/ResultPage/Building/science.png',
+    '/img/ResultPage/Building/student_union.png',
 
   ]
 
@@ -56,8 +56,7 @@ function MbtiMain() {
 
   function ShareWithFriends() {
     try {
-      navigator.clipboard.writeText(window.location.href);
-      alert("링크가 복사되었습니다!")
+      navigator.clipboard.writeText(window.location.href).then(res => { alert("링크가 복사되었습니다!") })
     } catch (error) {
       const textArea = document.createElement('textarea');
       document.body.appendChild(textArea);

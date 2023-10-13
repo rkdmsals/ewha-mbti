@@ -17,7 +17,8 @@
             "BestImg": "/img/ResultPage/Building/auditorium.png",
             "WorstChemi": "기숙사",
             "WorstSubname": "이불 밖은 위험해",
-            "WorstImg": "/img/ResultPage/Building/dormitory.png"
+            "WorstImg": "/img/ResultPage/Building/dormitory.png",
+            "shareImg_path": "/img/DownImg/law_img.png"
         },
         {
             "name": "종합과학관",
@@ -36,7 +37,8 @@
             "BestImg": "/img/ResultPage/Building/posco.png",
             "WorstChemi": "음악관",
             "WorstSubname": "마에스트로",
-            "WorstImg": "/img/ResultPage/Building/music.png"
+            "WorstImg": "/img/ResultPage/Building/music.png",
+            "shareImg_path": "/img/DownImg/science_img.png"
         },
         {
             "name": "체육관",
@@ -55,7 +57,8 @@
             "BestImg": "/img/ResultPage/Building/jinseonmi.png",
             "WorstChemi": "조형예술관",
             "WorstSubname": "숨은 예술가",
-            "WorstImg": "/img/ResultPage/Building/art_design.png"
+            "WorstImg": "/img/ResultPage/Building/art_design.png",
+            "shareImg_path": "/img/DownImg/physical_img.png"
         },
         {
             "name": "공학관",
@@ -74,7 +77,8 @@
             "BestImg": "/img/ResultPage/Building/business.png",
             "WorstChemi": "학생문화관",
             "WorstSubname": "자유로운 영혼",
-            "WorstImg": "/img/ResultPage/Building/student_union.png"
+            "WorstImg": "/img/ResultPage/Building/student_union.png",
+            "shareImg_path": "/img/DownImg/engineering_img.png"
         },
         {
             "name": "학생문화관",
@@ -94,7 +98,8 @@
             "BestImg": "/img/ResultPage/Building/library.png",
             "WorstChemi": "공학관",
             "WorstSubname": "고민없이 직진",
-            "WorstImg": "/img/ResultPage/Building/engineering.png"
+            "WorstImg": "/img/ResultPage/Building/engineering.png",
+            "shareImg_path": "/img/DownImg/student_union_img.png"
         },
         {
             "name": "조형예술관",
@@ -110,11 +115,12 @@
                 "이화이언에서도 벗의 예술적인 감상이나 영감을 들어볼 수 있으면 좋겠어요!"
             ],
             "BestChemi": "교육관",
-            "BestSubname": "모범생",
+            "BestSubname": "모범생st",
             "BestImg": "/img/ResultPage/Building/education.png",
             "WorstChemi": "체육관",
             "WorstSubname": "말보단 행동파",
-            "WorstImg": "/img/ResultPage/Building/physical.png"
+            "WorstImg": "/img/ResultPage/Building/physical.png",
+            "shareImg_path": "/img/DownImg/art_design_img.png"
         },
         {
             "name": "음악관",
@@ -133,7 +139,8 @@
             "BestImg": "/img/ResultPage/Building/helen.png",
             "WorstChemi": "종합과학관",
             "WorstSubname": "연구원 체질",
-            "WorstImg": "/img/ResultPage/Building/science.png"
+            "WorstImg": "/img/ResultPage/Building/science.png",
+            "shareImg_path": "/img/DownImg/music_img.png"
         },
         {
             "name": "기숙사",
@@ -153,7 +160,8 @@
             "BestImg": "/img/ResultPage/Building/ecc.png",
             "WorstChemi": "법학관",
             "WorstSubname": "토론왕",
-            "WorstImg": "/img/ResultPage/Building/law.png"
+            "WorstImg": "/img/ResultPage/Building/law.png",
+            "shareImg_path": "/img/DownImg/dormitory_img.png"
         },
         {
             "name": "포스코관",
@@ -173,7 +181,8 @@
             "BestImg": "/img/ResultPage/Building/science.png",
             "WorstChemi": "헬렌관",
             "WorstSubname": "따뜻한 마음",
-            "WorstImg": "/img/ResultPage/Building/helen.png"
+            "WorstImg": "/img/ResultPage/Building/helen.png",
+            "shareImg_path": "/img/DownImg/posco_img.png"
         },
         {
             "name": "중앙도서관",
@@ -193,7 +202,8 @@
             "BestImg": "/img/ResultPage/Building/student_union.png",
             "WorstChemi": "ECC",
             "WorstSubname": "넘치는 사랑",
-            "WorstImg": "/img/ResultPage/Building/ecc.png"
+            "WorstImg": "/img/ResultPage/Building/ecc.png",
+            "shareImg_path": "/img/DownImg/library_img.png"
         },
         {
             "name": "경영관",
@@ -212,7 +222,8 @@
             "BestImg": "/img/ResultPage/Building/engineering.png",
             "WorstChemi": "대강당",
             "WorstSubname": "엄.근.진",
-            "WorstImg": "/img/ResultPage/Building/auditorium.png"
+            "WorstImg": "/img/ResultPage/Building/auditorium.png",
+            "shareImg_path": "/img/DownImg/business_img.png"
         },
         {
             "name": "진선미관",
@@ -230,13 +241,14 @@
             "BestSubname": "말보단 행동파",
             "BestImg": "/img/ResultPage/Building/physical.png",
             "WorstChemi": "교육관",
-            "WorstSubname": "모범생",
-            "WorstImg": "/img/ResultPage/Building/education.png"
+            "WorstSubname": "모범생st",
+            "WorstImg": "/img/ResultPage/Building/education.png",
+            "shareImg_path": "/img/DownImg/jinseonmi_img.png"
         },
         {
             "name": "교육관 ",
             "img_path": "/img/ResultPage/Building/education.png",
-            "subname": "모범생",
+            "subname": "모범생st",
             "text": [
                 "다른 사람들을 위해 헌신하고 노력하는 벗!",
                 "벗에게 추천하는 이화여대 건물은 바로 교육관입니다!",
@@ -250,7 +262,8 @@
             "BestImg": "/img/ResultPage/Building/art_design.png",
             "WorstChemi": "진선미관",
             "WorstSubname": "교수님st",
-            "WorstImg": "/img/ResultPage/Building/jinseonmi.png"
+            "WorstImg": "/img/ResultPage/Building/jinseonmi.png",
+            "shareImg_path": "/img/DownImg/education_img.png"
         },
         {
             "name": "대강당",
@@ -269,7 +282,8 @@
             "BestImg": "/img/ResultPage/Building/law.png",
             "WorstChemi": "경영관",
             "WorstSubname": "확신의 리더",
-            "WorstImg": "/img/ResultPage/Building/business.png"
+            "WorstImg": "/img/ResultPage/Building/business.png",
+            "shareImg_path": "/img/DownImg/auditorium_img.png"
         },
         {
             "name": "ECC",
@@ -288,7 +302,8 @@
             "BestImg": "/img/ResultPage/Building/dormitory.png",
             "WorstChemi": "중앙도서관",
             "WorstSubname": "지식 탐구형",
-            "WorstImg": "/img/ResultPage/Building/library.png"
+            "WorstImg": "/img/ResultPage/Building/library.png",
+            "shareImg_path": "/img/DownImg/ecc_img.png"
         },
         {
             "name": "헬렌관",
@@ -307,7 +322,8 @@
             "BestImg": "/img/ResultPage/Building/music.png",
             "WorstChemi": "포스코관",
             "WorstSubname": "인간 플래너",
-            "WorstImg": "/img/ResultPage/Building/posco.png"
+            "WorstImg": "/img/ResultPage/Building/posco.png",
+            "shareImg_path": "/img/DownImg/helen_img.png"
         }
     ]
 }

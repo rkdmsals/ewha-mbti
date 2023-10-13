@@ -52,7 +52,7 @@ function Result() {
                 </div>
                 {/*외향, 내향 등의 비율을 나타내는 부분 */}
                 <div className="ResultFrame">
-                    <div className="ResultPercent" style={{ display: "none" }}>
+                    <div className="ResultPercent">
                         <img className="ResultPercentEach" src={`/img/ResultSection/type1_section` + type1 + '.png'} decoding="async" />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type2_section` + type2 + '.png'} />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type3_section` + type3 + '.png'} />
@@ -77,9 +77,9 @@ function Result() {
                         </div>
                         <div className="Chemistries">
                             <div className="ChemiTitle">환장의 케미</div>
-                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.img_path}></img>
-                            <div className="ChemiMiddle">자유로운 영혼</div>
-                            <div className="ChemiName">조형예술관</div>
+                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.WorstImg}></img>
+                            <div className="ChemiMiddle">{pageData.WorstSubname}</div>
+                            <div className="ChemiName">{pageData.WorstChemi}</div>
                         </div>
                     </div>
                     <ResultOthers />
@@ -118,9 +118,9 @@ function Result() {
                         </div>
                         <div className="Chemistries">
                             <div className="ChemiTitle">환장의 케미</div>
-                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.img_path}></img>
-                            <div className="ChemiMiddle">자유로운 영혼</div>
-                            <div className="ChemiName">조형예술관</div>
+                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.WorstImg}></img>
+                            <div className="ChemiMiddle">{pageData.WorstSubname}</div>
+                            <div className="ChemiName">{pageData.WorstChemi}</div>
                         </div>
                     </div>
                     <ResultOthers />
