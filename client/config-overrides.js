@@ -13,7 +13,7 @@ module.exports = {
         config.resolve.fallback = {
             "crypto": require.resolve("crypto-browserify"),
             "stream": require.resolve("stream-browserify"),
-            "path": path.resolve("path-browserify"),
+            "path": require.resolve("path-browserify"),
             "os": require.resolve("os-browserify/browser")
         };
 
