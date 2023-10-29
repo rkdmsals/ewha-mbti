@@ -14,7 +14,8 @@ module.exports = {
             "crypto": require.resolve("crypto-browserify"),
             "stream": require.resolve("stream-browserify"),
             "path": require.resolve("path-browserify"),
-            "os": require.resolve("os-browserify/browser")
+            "buffer": false
+            // "os": require.resolve("os-browserify/browser")
         };
 
         return config;
