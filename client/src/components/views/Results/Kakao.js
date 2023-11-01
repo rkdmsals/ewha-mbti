@@ -2486,7 +2486,7 @@ var screen = window.screen;
                             extend: function (overrides) {
                                 var subtype = create(this);
                                 //추가한 코드
-                                console.log(subtype)
+                                // console.log(subtype)
                                 if (overrides) {
                                     subtype.mixIn(overrides);
                                 }

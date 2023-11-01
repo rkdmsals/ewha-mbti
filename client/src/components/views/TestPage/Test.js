@@ -3,7 +3,6 @@ import TestData from "./questions.json";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Logo from "../../Footer/Logo";
-import axios from "axios";
 function Test() {
 
     const navigate = useNavigate();
@@ -13,53 +12,97 @@ function Test() {
     //결과 페이지 반환
     const progressBlock = document.querySelector(".ProgressBlock");
     const progressBar = document.querySelector(".ProgressBar");
+    var progressPercent = 32.2;
+    if (window.innerWidth < 465) {
+        progressPercent = window.innerWidth * 7.5 / 100;
+    }
     const ShowResult = () => {
         //그냥 이때 DB에 냅다 올리기, 나중에 id를 같이 줘서 받아오자 (result에서)
         var num = 1
+        let percents = [0, 0, 0, 0];
         switch (answers.type1[0]) {
 
-            case 0: case 1:
+            case 0:
                 num += 2 ** 0 * 1;
+                percents[0] = 3;
                 break;
-
-            case 2: case 3:
+            case 1:
+                num += 2 ** 0 * 1;
+                percents[0] = 2;
+                break;
+            case 2:
                 num += 2 ** 0 * 0;
+                percents[0] = 2;
+                break;
+            case 3:
+                num += 2 ** 0 * 0;
+                percents[0] = 3;
                 break;
             default:
                 break;
         }
         switch (answers.type2[0]) {
 
-            case 0: case 1:
+            case 0:
                 num += 2 ** 1 * 1;
+                percents[1] = 3;
+                break;
+            case 1:
+                num += 2 ** 1 * 1;
+                percents[1] = 2;
                 break;
 
-            case 2: case 3:
+            case 2:
                 num += 2 ** 1 * 0;
+                percents[1] = 2;
+                break;
+            case 3:
+                num += 2 ** 1 * 0;
+                percents[1] = 3;
                 break;
             default:
                 break;
         }
         switch (answers.type3[0]) {
 
-            case 0: case 1:
+            case 0:
                 num += 2 ** 2 * 1;
+                percents[2] = 3;
+                break;
+            case 1:
+                num += 2 ** 2 * 1;
+                percents[2] = 2;
                 break;
 
-            case 2: case 3:
+            case 2:
                 num += 2 ** 2 * 0;
+                percents[2] = 2;
+                break;
+            case 3:
+                num += 2 ** 2 * 0;
+                percents[2] = 3;
                 break;
             default:
                 break;
         }
         switch (answers.type4[0]) {
 
-            case 0: case 1:
+            case 0:
                 num += 2 ** 3 * 1;
+                percents[3] = 3;
                 break;
 
-            case 2: case 3:
+            case 1:
+                num += 2 ** 3 * 1;
+                percents[3] = 2;
+                break;
+            case 2:
                 num += 2 ** 3 * 0;
+                percents[3] = 2;
+                break;
+            case 3:
+                num += 2 ** 3 * 0;
+                percents[3] = 3;
                 break;
             default:
                 break;
@@ -67,20 +110,16 @@ function Test() {
 
         console.log(num)
         // axios
-        //     .post("api/data",
-        //         {
-        //             // id: 1,
-        //             MBTI: 1,
-        //         })
-        //     .then((response) => {
-        //         // console.log(response.data.MBTI);
-        //         navigate(`/test/result/${id}`);
+        //     .post("/api/data", { MBTI: "대강당" })
+        //     .then((res) => {
+        //         console.log(res.data.MBTI);
+        //         // navigate(`/test/result/${id}`);
 
         //     }).catch((error) => {
         //         console.log("An error occurred: ", error.response);
         //     });
 
-        navigate(`/test/result/${num}`);
+        navigate(`/test/result/${num}`, { state: percents });
     }
     //답변 저장하고 페이지 넘겨주기
     const TakeAnswer = (val) => {
@@ -117,7 +156,7 @@ function Test() {
                 <div className="TestInner">
                     <div className="ProgressText">{a.num}/12</div>
                     <div className="ProgressBar">
-                        <div className="ProgressBlock " style={{ width: page * 32.2 }}></div>
+                        <div className="ProgressBlock " style={{ width: page * progressPercent }}></div>
                     </div>
                     <div className="Quesiton_container">
                         <div className="TestQ">Q.</div>

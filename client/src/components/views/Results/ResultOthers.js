@@ -1,13 +1,17 @@
-import { Navigate } from "react-router-dom";
 import "./ResultOthers.css"
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Kakao from "./Kakao";
-import FB from "./Facebook";
+import resultData from "./results.json";
+import { useParams } from "react-router-dom";
+//이미지 로딩 속도가 느린 것을 개선하기 위해 아래 부분은 deconding="async"를 넣어 화면이 보여질 때 로딩되도록 수정함
 function ResultOthers() {
 
+    let params = useParams();
+    let pageData = resultData.results[params.id - 1];
+
     const url = encodeURI(window.location.href);
-    const text = '지금 우리 MBTI는?'
-    const navigate = useNavigate();
+    const text = '나와 잘어울리는 이화여대 건물은?'
+    // const navigate = useNavigate();
     const ShareKakao = () => {
         //init 안에 API key 변경해서 넣으면 됨
         if (!Kakao.isInitialized()) {
@@ -25,77 +29,30 @@ function ResultOthers() {
 
     }
 
-    const ShareInstagram = async () => {
-        // 서버에 Instagram 스토리 URL을 요청
-        try {
-            const response = await fetch('/shareInstagramStory'); // 서버 엔드포인트
-            const data = await response.json();
-
-            if (response.status === 200) {
-                // Instagram 스토리 URL 가져오기 성공
-                const instagramStoryURL = data.storyURL;
-                // Instagram 스토리 URL을 사용하여 Instagram 스토리를 엽니다.
-                window.open(instagramStoryURL, '_blank');
-            } else {
-                // 오류 처리 로직
-                console.error('Instagram 스토리 URL 요청 오류:', data.error);
-            }
-        } catch (error) {
-            console.error('Instagram 스토리 URL 요청 중에 오류 발생:', error);
-        }
+    //이미지 저장 함수
+    const saveImage = () => {
+        const imageUrl = pageData.shareImg_path;
+        const a = document.createElement('a');
+        a.href = imageUrl;
+        a.download = 'EWHA_building_test.png';
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     };
-    /*
-        const ShareInstagram = () => {
-            const currentURL = window.location.href;
-    
-            const instagramStoryURL = `https://www.instagram.com/add_to_story?url=${encodeURIComponent(currentURL)}`;
-            window.open(instagramStoryURL, '_blank');
-        };
-    */
-    /*
-    //https://developers.facebook.com/docs/instagram/sharing-to-stories
-    const ShareInstagram = () => {
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1397734924482042',
-                autoLogAppEvents: true,
-                xfbml: true,
-                version: 'v18.0'
-            });
-        };
 
-        // var intent = ("com.instagram.share.ADD_TO_STORY");
-
-        // // Attach your App ID to the intent
-        // var sourceApplication = "1397734924482042"; // This is your application's FB ID
-        // intent.putExtra("source_application", sourceApplication);
-
-        // // Attach your image to the intent from a URI
-        // var backgroundAssetUri = Uri.parse("/img/auditorium.png");
-        // intent.setDataAndType(backgroundAssetUri, MEDIA_TYPE_JPEG);
-
-        // // Grant URI permissions for the image
-        // intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-
-        // // Instantiate an activity
-        // var activity = getActivity();
-
-        // // Verify that the activity resolves the intent and start it
-        // if (activity.getPackageManager().resolveActivity(intent, 0) != null) {
-        //     activity.startActivityForResult(intent, 0);
-        // }
-        // window.open("https://api.instagram.com/oauth")
-
-        // 전달할 URL
-        window.open("http://www.facebook.com/sharer/sharer.php?href=" + url);
-    }
-
-    */
-    const ShareTwitter = () => {
-        window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url)
-    }
     const ShareLink = () => {
-        navigator.clipboard.writeText(url);
+        try {
+            navigator.clipboard.writeText(url).then(res => { alert("링크가 복사되었습니다!") })
+
+        } catch (error) {
+            const textArea = document.createElement('textarea');
+            document.body.appendChild(textArea);
+            textArea.value = url;
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+        }
     }
 
     return (
@@ -107,26 +64,25 @@ function ResultOthers() {
                         src="/img/ResultPage/Buttons/kakao.png"
                         alt="kakaotalk"
                         className="Images"
+                        decoding="async"
                     /></div>
-                <div className="SNSButton"><img
-                    src="/img/ResultPage/Buttons/instagram.png"
-                    alt="instagram"
+                <div className="SNSButton" onClick={saveImage} ><img
+                    src="/img/ResultPage/Buttons/ImageDown.png" // 이미지는 임시이미지
+                    alt="imageSave"
                     className="Images"
-                    onClick={ShareInstagram} /></div>
-                <div className="SNSButton"> <img
-                    src="/img/ResultPage/Buttons/twitter.png"
-                    alt="twitter"
-                    className="Images"
-                    onClick={ShareTwitter} /></div>
-                <div className="SNSButton"><img
+                    decoding="async"
+                /></div>
+                <div className="SNSButton" onClick={ShareLink}><img
                     src="/img/ResultPage/Buttons/link.png"
                     alt="link"
                     className="Images"
-                    onClick={ShareLink} /></div>
+                    decoding="async"
+                /></div>
+
             </div>
-            <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png"></img>
-            <button className="GoGuideButton">
-                안내 사이트 보러가기</button>
+            <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png" decoding="async"></img>
+            <Link to={'http://ewhaianrenewalinfo.com'} className="GoGuideButton">
+                안내 사이트 보러가기</Link>
 
         </div >
     )
