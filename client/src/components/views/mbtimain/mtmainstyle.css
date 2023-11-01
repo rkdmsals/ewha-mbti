@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 43px;
+  padding-top: 14vh;
   background-color: #F5EFEB;
-  height: 100vh;
+  height: 101vh;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -61,10 +61,6 @@
 }
 
 .MbtiMainButton {
-  width: 381px;
-  height: 58px;
-  /* display: flex; */
-  /* flex-direction: column; */
   align-items: center;
   display: flex;
   justify-content: center;
@@ -92,14 +88,15 @@
 
 @media screen and (max-width: 767px) {
   /* .MbtiMain {
-    padding: 43px;
+    padding: px;
   } */
 
   .MbtiMain .slider-image {
-    width: 281.97px;
+    width: 80vw;
     height: 198px;
     position: relative;
     top: -10px;
+    margin-bottom: 4vh;
   }
 
   .MbtiMain div div {
@@ -119,20 +116,21 @@
 
   .MbtiMainButton {
     margin-top: 15px;
-    /* font-size: 90%; */
     padding: 8px 0;
-    width: 325px;
+    width: 86.5vw;
     height: 53px;
     position: relative;
     top: -30px;
   }
 
   .MbtiMain img[src$="/img/Footer/Footer_logo.png"] {
-    margin-top: 8px;
+    top: -47px;
     width: 82px;
     height: 22.73px;
   }
 }
+
+
 
 @media screen and (max-width: 1024px) and (max-height: 600px) {
 
@@ -164,5 +162,6 @@
     width: 82px;
     height: 22.73px;
   }
+
 
 }

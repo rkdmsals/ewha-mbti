@@ -35,7 +35,7 @@ function MbtiMain() {
         setCurrentIndex((prevIndex) =>
           prevIndex === images.length - 1 ? 0 : prevIndex + 1
         );
-      }, 2000);
+      }, 1000);
 
       return () => clearInterval(interval);
     }, []);
@@ -80,7 +80,7 @@ function MbtiMain() {
       <button className="MbtiMainButton" style={{ backgroundColor: '#2e6d4a' }} onClick={() => navigate("/test")}>테스트 시작하기</button>
       {/* </Link> */}
       {/* <Link to="/share"> */}
-      <button className="MbtiMainButton" style={{ backgroundColor: '#494949' }} onClick={ShareWithFriends}>친구에게 공유하기</button>
+      <button className="MbtiMainButton" onClick={ShareWithFriends}>친구에게 공유하기</button>
       {/* </Link> */}
       <div>
         <img src="/img/Footer/Footer_logo.png" alt="footer_logo" />
