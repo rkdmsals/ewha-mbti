@@ -116,7 +116,6 @@ button:hover,
     .GoGuideButton {
         font-size: 12px;
         width: 144px;
-        height: 33px;
         top: -101px;
         left: 196px;
         border-radius: 26px;
@@ -154,7 +153,6 @@ button:hover,
     .GoGuideButton {
         font-size: 10px;
         width: 120px;
-        height: 29px;
         top: -76px;
         left: 154px;
     }
