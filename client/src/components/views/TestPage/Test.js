@@ -152,7 +152,7 @@ function Test() {
         {page < 13 ? TestData.questions.map((a, idx) =>
             //progressBar 진행상황의 경우, progressBar안에 작은 네모난 요소를 넣어서 버튼 누를 때마다 하나씩 늘어나도록
             //아니면 버튼 누를 때마다 or a.num 정보를 통해 border길이 or 안의 요소 길이 조정가능
-            <div className="TestPage" key={idx} style={{ display: page === idx + 1 ? 'flex' : 'none' }}>
+            <div className="TestPage" key={idx} style={{ display: page === idx + 1 ? 'block' : 'none' }}>
                 <div className="TestInner">
                     <div className="ProgressText">{a.num}/12</div>
                     <div className="ProgressBar">
@@ -165,8 +165,8 @@ function Test() {
                         <button className="Answer1" onClick={() => TakeAnswer(1)}>{a.answer1}</button>
                         <button className="Answer2" onClick={() => TakeAnswer(2)}>{a.answer2}</button>
                     </div>
-                    <Logo />
                 </div>
+                <Logo />
             </div>
         ) : ShowResult()
         }
