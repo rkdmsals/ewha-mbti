@@ -3,11 +3,12 @@
     height: 100vh;
     background: #F5EFEB;
     font-weight: 600;
-    box-sizing: border-box;
+    overflow: scroll;
 }
 
 .TestPage {
-    display: flex;
+    /* display: flex; */
+    display: block;
 }
 
 .TestInner {
@@ -89,6 +90,10 @@
     .TestQuestion {
         width: 90%;
         font-size: 22px;
+    }
+
+    .TestInner {
+        width: 100%;
     }
 
     .Answer1,
