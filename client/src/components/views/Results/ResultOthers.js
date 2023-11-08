@@ -8,10 +8,8 @@ function ResultOthers() {
 
     let params = useParams();
     let pageData = resultData.results[params.id - 1];
-
     const url = encodeURI(window.location.href);
-    const text = '나와 잘어울리는 이화여대 건물은?'
-    // const navigate = useNavigate();
+
     const ShareKakao = () => {
         //init 안에 API key 변경해서 넣으면 됨
         if (!Kakao.isInitialized()) {
@@ -26,7 +24,6 @@ function ResultOthers() {
                 description: '링크에서 테스트해보기',
             },
         });
-
     }
 
     //이미지 저장 함수
@@ -52,6 +49,7 @@ function ResultOthers() {
             textArea.select();
             document.execCommand('copy');
             document.body.removeChild(textArea);
+            alert("링크가 복사되었습니다!");
         }
     }
 
