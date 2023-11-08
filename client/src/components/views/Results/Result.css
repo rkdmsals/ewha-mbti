@@ -48,7 +48,8 @@
 
 .ResultPercent {
     width: 100%;
-    height: fit-content;
+    height: 86px;
+    /* max-height: 50px; */
     padding-top: 32px;
     margin-bottom: 10px;
     display: flex;
@@ -57,7 +58,7 @@
 
 .ResultPercentEach {
     width: 20%;
-    height: fit-content;
+    object-fit: contain;
 }
 
 .ResultPercentText {
@@ -79,10 +80,12 @@
     color: #403F3F;
     font-size: 20px;
     font-weight: 600;
-    margin: 10px 10px 10px 10px;
+    /* margin: 10px 10px 10px 10px; */
     word-break: keep-all;
     /*단어단위로 끊게끔*/
     display: flex;
+    margin: 10px auto;
+    width: 90%;
 }
 
 .resultEachText {
@@ -225,7 +228,7 @@
 
     .ResultText {
         font-size: 16px;
-        margin: 10px 10px 10px 10px;
+        /* margin: 10px; */
     }
 
     /*Chemistry*/
@@ -270,7 +273,7 @@
         /* margin: 0 0 15px 25px; */
         margin: 0 auto;
         margin-bottom: 15px;
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .ReTestButton {

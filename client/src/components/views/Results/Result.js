@@ -22,20 +22,21 @@ function Result() {
         type3 = location.state[2]
         type4 = location.state[3]
         var typename1, typename2, typename3, typename4;
-        if (params.id % 2 == 1) {
+        var id = params.id;
+        if (id % 2 == 1) {
             typename1 = "외향"
         } else {
             typename1 = "내향"
         }
-        if ((params.id / 2) % 2 == 1) {
+        if ((id / 2) % 2 == 1) {
             typename2 = "상상"
         } else {
-            typename3 = "직관"
-        } if ((params.id / 4) % 2 == 1) {
+            typename2 = "직관"
+        } if ((id / 4) % 2 == 1) {
             typename3 = "이성"
         } else {
-            typename2 = "감성"
-        } if ((params.id / 8) % 2 == 1) {
+            typename3 = "감성"
+        } if ((id / 8) % 2 == 1) {
             typename4 = "즉흥"
         } else {
             typename4 = "계획"
@@ -53,7 +54,7 @@ function Result() {
                 {/*외향, 내향 등의 비율을 나타내는 부분 */}
                 <div className="ResultFrame">
                     <div className="ResultPercent">
-                        <img className="ResultPercentEach" src={`/img/ResultSection/type1_section` + type1 + '.png'} decoding="async" />
+                        <img className="ResultPercentEach" src={`/img/ResultSection/type1_section` + type1 + '.png'} />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type2_section` + type2 + '.png'} />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type3_section` + type3 + '.png'} />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type4_section` + type4 + '.png'} />
@@ -71,13 +72,13 @@ function Result() {
                     <div className="ChemistryPage">
                         <div className="Chemistries">
                             <div className="ChemiTitle">환상의 케미</div>
-                            <img className="ChemiImg" alt="환상의 케미 이미지" src={pageData.BestImg}></img>
+                            <img className="ChemiImg" alt="환상의 케미 이미지" src={pageData.BestImg} decoding="async" ></img>
                             <div className="ChemiMiddle">{pageData.BestSubname}</div>
                             <div className="ChemiName">{pageData.BestChemi}</div>
                         </div>
                         <div className="Chemistries">
                             <div className="ChemiTitle">환장의 케미</div>
-                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.WorstImg}></img>
+                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.WorstImg} decoding="async" ></img>
                             <div className="ChemiMiddle">{pageData.WorstSubname}</div>
                             <div className="ChemiName">{pageData.WorstChemi}</div>
                         </div>
