@@ -3,10 +3,12 @@
     height: 100vh;
     background: #F5EFEB;
     font-weight: 600;
+    overflow: scroll;
 }
 
 .TestPage {
-    display: flex;
+    /* display: flex; */
+    display: block;
 }
 
 .TestInner {
@@ -51,7 +53,7 @@
 
 .TestQuestion {
     width: 360px;
-    height: 220px;
+    height: 180px;
     font-size: 26px;
     padding: 0 auto;
     text-align: center;
@@ -87,12 +89,17 @@
 
     .TestQuestion {
         width: 90%;
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .TestInner {
+        width: 100%;
     }
 
     .Answer1,
     .Answer2 {
         width: 85%;
+        font-size: 18px;
     }
 
     .ProgressBar {

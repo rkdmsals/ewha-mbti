@@ -54,18 +54,21 @@ function MbtiMain() {
     );
   }
 
-  function ShareWithFriends() {
+  const ShareLink = () => {
     try {
-      navigator.clipboard.writeText(window.location.href).then(res => { alert("링크가 복사되었습니다!") })
+        navigator.clipboard.writeText(url).then(res => { alert("링크가 복사되었습니다!") })
+
     } catch (error) {
-      const textArea = document.createElement('textarea');
-      document.body.appendChild(textArea);
-      textArea.value = window.location.href;
-      textArea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textArea);
+        const textArea = document.createElement('textarea');
+        document.body.appendChild(textArea);
+        textArea.value = url;
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert("링크가 복사되었습니다!");
     }
-  }
+}
+/*C:\Users\plus9\OneDrive\바탕 화면\이화이언개발\ewha-mbti-main\ewha-mbti\client */
 
   return (
     <div className="MbtiMain">

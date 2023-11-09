@@ -97,9 +97,6 @@
 */
 
 /*eslint no-undef: "off" */
-require("crypto");
-
-
 var self = this;
 var location = window.location;
 var screen = window.screen;
