@@ -15,6 +15,7 @@
 
 .MbtiMain div {
   color: #3a3a3a;
+  /* margin-bottom: 5px; */
   font-size: 18px;
 }
 
@@ -48,15 +49,15 @@
 
 .image-description {
   font-size: 0;
-
+  /* 텍스트를 숨깁니다 */
   margin: 0;
-
+  /* 여백을 없앱니다 */
   padding: 0;
-
+  /* 안쪽 여백을 없앱니다 */
   line-height: 0;
-  
+  /* 행 간격을 없앱니다 (옵션) */
   display: none;
-  
+  /* 텍스트를 화면에서 숨깁니다 */
 }
 
 .MbtiMainButton {
@@ -127,45 +128,4 @@
     width: 82px;
     height: 22.73px;
   }
-}
-@media (min-width: 2560px) and (max-width: 2736px){
-  .MbtiMain .slider-image {
-    width: 40vw;
-    height: 40vh;
-    position: relative;
-    top: -10px;
-    margin-bottom: 4vh;
-  }
-
-  .MbtiMain div div {
-    margin: 0px;
-    font-size: 72px;
-  }
-
-  .MbtiMain div {
-    font-size: 32px;
-  }
-
-  .MbtiMain div:nth-child(2),
-  .MbtiMain div:nth-child(3),
-  .MbtiMain div:nth-child(4) {
-    font-size: 72px;
-  }
-
-  .MbtiMainButton {
-    margin-top: 15px;
-    padding: 8px 0;
-    width: 40vw;
-    height: 25vh;
-    position: relative;
-    font-size: 36px;
-    top: -30px;
-  }
-
-  .MbtiMain img[src$="/img/Footer/Footer_logo.png"] {
-    top: -47px;
-    width: 164px;
-    height: 45.46px;
-  }  
-    
 }
