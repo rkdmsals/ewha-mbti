@@ -216,6 +216,7 @@
 
     .TypeImg {
         height: 224px;
+        max-width: 90%;
         padding-bottom: 22px;
     }
 

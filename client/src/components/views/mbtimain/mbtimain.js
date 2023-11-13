@@ -56,26 +56,26 @@ function MbtiMain() {
 
   const url = encodeURI(window.location.href);
   const ShareWithFriends = () => {
-        try {
-            navigator.clipboard.writeText(url).then(res => { alert("링크가 복사되었습니다!") })
+    try {
+      navigator.clipboard.writeText(url).then(res => { alert("링크가 복사되었습니다!") })
 
-        } catch (error) {
-            const textArea = document.createElement('textarea');
-            document.body.appendChild(textArea);
-            textArea.value = url;
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-            alert("링크가 복사되었습니다!");
-        }
-    } 
+    } catch (error) {
+      const textArea = document.createElement('textarea');
+      document.body.appendChild(textArea);
+      textArea.value = url;
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      alert("링크가 복사되었습니다!");
+    }
+  }
   return (
     <div className="MbtiMain">
       <div style={{ color: '#3A3A3A' }}>성격유형테스트</div>
       <div>나와 어울리는</div>
       <div>이화여자대학교</div>
       <div style={{ margin: '0', display: 'inline' }}>
-        <div>건물 <div style={{ display: 'inline' }}>은?</div></div>
+        <div>건물<div style={{ display: 'inline' }}>은?</div></div>
       </div>
       <ImageSlider />
       {/* <Link to="/test"> */}

@@ -36,6 +36,7 @@ function ResultOthers() {
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
+        alert("이미지가 저장되었습니다!");
     };
 
     const ShareLink = () => {
