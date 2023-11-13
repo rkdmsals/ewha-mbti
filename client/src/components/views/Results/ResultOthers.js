@@ -20,7 +20,8 @@ function ResultOthers() {
             container: '#KakaoButton',
             templateId: 98548,
             templateArgs: {
-                ResultImg: `${imageUrl}`,
+                //서버에 이미지 파일 올려야 가능한 기능
+                // ResultImg: "public"+imageUrl,
                 title: '나와 잘어울리는 이화여대 건물은?',
                 description: '링크에서 테스트해보기',
             },
@@ -56,30 +57,27 @@ function ResultOthers() {
 
     return (
         <div className="ResultOthers">
-            <div className="ShareText"><img src="/img/ResultPage/Buttons/share.png"></img><span>내 결과 공유하기</span></div>
+            <div className="ShareText"><img src="/img/ResultPage/Buttons/share.png"></img><span>공유하기</span></div>
             <div className="ShareButtons">
                 <div className="SNSButton" id="KakaoButton" onClick={ShareKakao}>
                     <img
                         src="/img/ResultPage/Buttons/kakao.png"
                         alt="kakaotalk"
                         className="Images"
-                        decoding="async"
                     /></div>
                 <div className="SNSButton" onClick={saveImage} ><img
                     src="/img/ResultPage/Buttons/ImageDown.png" // 이미지는 임시이미지
                     alt="imageSave"
                     className="Images"
-                    decoding="async"
                 /></div>
                 <div className="SNSButton" onClick={ShareLink}><img
                     src="/img/ResultPage/Buttons/link.png"
                     alt="link"
                     className="Images"
-                    decoding="async"
                 /></div>
 
             </div>
-            <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png" decoding="async"></img>
+            <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png" ></img>
             <Link to={'http://ewhaianrenewalinfo.com'} className="GoGuideButton">
                 리뉴얼 사이트 미리보기</Link>
 
