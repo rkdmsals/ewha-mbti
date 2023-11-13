@@ -9,7 +9,7 @@ function ResultOthers() {
     let params = useParams();
     let pageData = resultData.results[params.id - 1];
     const url = encodeURI(window.location.href);
-
+    const imageUrl = pageData.shareImg_path;
     const ShareKakao = () => {
         //init 안에 API key 변경해서 넣으면 됨
         if (!Kakao.isInitialized()) {
@@ -20,6 +20,7 @@ function ResultOthers() {
             container: '#KakaoButton',
             templateId: 98548,
             templateArgs: {
+                ResultImg: `${imageUrl}`,
                 title: '나와 잘어울리는 이화여대 건물은?',
                 description: '링크에서 테스트해보기',
             },
@@ -28,7 +29,6 @@ function ResultOthers() {
 
     //이미지 저장 함수
     const saveImage = () => {
-        const imageUrl = pageData.shareImg_path;
         const a = document.createElement('a');
         a.href = imageUrl;
         a.download = 'EWHA_building_test.png';
@@ -81,7 +81,7 @@ function ResultOthers() {
             </div>
             <img className="GuideImg" alt="rabbit_guide" src="/img/guide_image.png" decoding="async"></img>
             <Link to={'http://ewhaianrenewalinfo.com'} className="GoGuideButton">
-                안내 사이트 보러가기</Link>
+                리뉴얼 사이트 미리보기</Link>
 
         </div >
     )

@@ -20,8 +20,10 @@
 }
 
 .ProgressText {
-    padding: 25px 0px 5px 35px;
+    padding: 25px 0px 5px 0px;
     font-size: 18px;
+    width: 385px;
+    margin: 0 auto;
 }
 
 .ProgressBar {
@@ -71,7 +73,7 @@
     height: 90px;
     border-radius: 5px;
     border: 0;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
     margin-bottom: 8%;
     font-size: 20px;
@@ -83,6 +85,8 @@
 .Answer1:hover,
 .Answer2:hover {
     background: #ABBFAF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    transform: none;
 }
 
 
@@ -113,5 +117,9 @@
         width: 7.5%;
         height: 100%;
         background-color: #2E6D4A;
+    }
+
+    .ProgressText {
+        width: 90%;
     }
 }

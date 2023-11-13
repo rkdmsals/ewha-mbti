@@ -71,7 +71,7 @@ function MbtiMain() {
   }
   return (
     <div className="MbtiMain">
-      <div style={{ color: '#3A3A3A' }}>성격유형테스트</div>
+      <div style={{ color: '#3A3A3A', marginBottom: "10px" }}>성격유형테스트</div>
       <div>나와 어울리는</div>
       <div>이화여자대학교</div>
       <div style={{ margin: '0', display: 'inline' }}>
@@ -79,7 +79,7 @@ function MbtiMain() {
       </div>
       <ImageSlider />
       {/* <Link to="/test"> */}
-      <button className="MbtiMainButton" style={{ backgroundColor: '#2e6d4a' }} onClick={() => navigate("/test")}>테스트 시작하기</button>
+      <button className="MbtiMainButton" style={{ backgroundColor: '#2e6d4a', color: "#F8FFE4" }} onClick={() => navigate("/test")}>테스트 시작하기</button>
       {/* </Link> */}
       {/* <Link to="/share"> */}
       <button className="MbtiMainButton" onClick={ShareWithFriends}>친구에게 공유하기</button>
