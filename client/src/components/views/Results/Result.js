@@ -1,14 +1,11 @@
 import "./Result.css";
 import ResultOthers from "./ResultOthers";
 import Logo from "../../Footer/Logo";
-import { useParams } from "react-router-dom";
 import resultData from "./results.json";
-import { useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 // import html2canvas from 'html2canvas';
-
-import { useNavigate } from "react-router-dom";
+import $ from "jquery"
 function Result() {
-
     const location = useLocation();
     let params = useParams();
     let pageData = resultData.results[params.id - 1];
@@ -41,8 +38,20 @@ function Result() {
         } else {
             typename4 = "계획"
         }
+        // $(window).on('load', function () {
+        //     $('#loading').hide();
+        // });
+
+        $(document).ready(function () {
+            $('#loading').hide();
+        });
         return (
             <div className="ResultPage">
+                <div id="loading">
+                    <div><img src="/img/ResultPage/loading.gif"></img></div>
+                    <div>당신과 잘 어울리는</div>
+                    <div>이화여자대학교 건물은요...</div>
+                </div>
                 <div className="ResultImageFrame">
                     <span className="ResultTitle">나와 어울리는 이화여자대학교 건물은</span>
                     <div className="ResultMiddletext">{pageData.subname}</div>
@@ -72,13 +81,13 @@ function Result() {
                     <div className="ChemistryPage">
                         <div className="Chemistries">
                             <div className="ChemiTitle">환상의 케미</div>
-                            <img className="ChemiImg" alt="환상의 케미 이미지" src={pageData.BestImg} decoding="async" ></img>
+                            <img className="ChemiImg" alt="환상의 케미 이미지" src={pageData.BestImg} ></img>
                             <div className="ChemiMiddle">{pageData.BestSubname}</div>
                             <div className="ChemiName">{pageData.BestChemi}</div>
                         </div>
                         <div className="Chemistries">
                             <div className="ChemiTitle">환장의 케미</div>
-                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.WorstImg} decoding="async" ></img>
+                            <img className="ChemiImg" alt="환장의 케미 이미지" src={pageData.WorstImg}  ></img>
                             <div className="ChemiMiddle">{pageData.WorstSubname}</div>
                             <div className="ChemiName">{pageData.WorstChemi}</div>
                         </div>
@@ -90,7 +99,9 @@ function Result() {
                 </div>
             </div >
         );
+
     } catch (error) {
+        console.log("에러는 " + error)
         return (
             <div className="ResultPage">
                 <div className="ResultImageFrame">

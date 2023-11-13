@@ -185,6 +185,31 @@
     cursor: pointer;
 }
 
+#loading {
+    position: fixed;
+    background-color: #2E6D4A;
+    background-image: url(../../../../public/img/ResultPage/blocks.png);
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    /* z-index: 90; */
+    color: #F8FFE4;
+    font-size: 24px;
+}
+
+#loading div {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#loading img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 18px;
+    margin-top: 36vh;
+}
+
 @media (max-width: 600px) {
 
     .ResultFrame {

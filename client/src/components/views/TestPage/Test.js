@@ -108,7 +108,6 @@ function Test() {
                 break;
         }
 
-        console.log(num)
         // axios
         //     .post("/api/data", { MBTI: "대강당" })
         //     .then((res) => {
