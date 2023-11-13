@@ -28,7 +28,7 @@
     height: 14px;
     border-radius: 50%;
     background-color: #215035;
-    border: solid 18px #2E6D4A;
+    margin: 18px;
 }
 
 .ViewImg {
@@ -69,7 +69,7 @@ footer {
     .Circle {
         width: 10px;
         height: 10px;
-        border: solid 11px #2E6D4A;
+        margin: 11px;
     }
 
     .ViewImg {
