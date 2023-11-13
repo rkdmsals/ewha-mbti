@@ -53,13 +53,14 @@
 
 .TestQuestion {
     width: 360px;
-    height: 180px;
+    height: 170px;
     font-size: 26px;
     padding: 0 auto;
     text-align: center;
     margin: 0 auto;
     line-height: 1.4;
     justify-items: center;
+    vertical-align: middle;
 }
 
 .Answer1,
