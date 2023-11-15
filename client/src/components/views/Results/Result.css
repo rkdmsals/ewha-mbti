@@ -165,6 +165,7 @@
     border-radius: 5px;
     text-align: center;
     border: 0px;
+    padding: 16px 0px;
 }
 
 .AllTypesButton {
@@ -255,7 +256,7 @@
 
 
     .ResultText {
-        font-size: 17px; 
+        font-size: 17px;
         /* margin: 10px; */
     }
 
@@ -301,6 +302,7 @@
         margin: 0 auto;
         margin-bottom: 15px;
         font-size: 23px;
+        padding: 15px 0px;
     }
 
     .ReTestButton {
@@ -364,6 +366,7 @@
         width: 85%;
         height: 45px;
         font-size: 15px;
+        padding: 14px 0px;
     }
 
     .ReTestButton {
