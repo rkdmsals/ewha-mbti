@@ -15,7 +15,7 @@
             "BestChemi": "대강당",
             "BestSubname": "엄.근.진",
             "BestImg": "/img/ResultPage/Building/auditorium.png",
-            "WorstChemi": "기숙사",
+            "WorstChemi": "이하우스",
             "WorstSubname": "이불 밖은 위험해",
             "WorstImg": "/img/ResultPage/Building/dormitory.png",
             "shareImg_path": "/img/DownImg/law_img.png"
@@ -143,17 +143,17 @@
             "shareImg_path": "/img/DownImg/music_img.png"
         },
         {
-            "name": "기숙사",
+            "name": "이하우스",
             "img_path": "/img/ResultPage/Building/dormitory.png",
             "subname": "이불 밖은 위험해",
             "text": [
                 "편안함을 선호하고 상대의 편안함을 위해서도 노력하는 벗!",
-                "벗에게 추천하는 이화여대 건물은 바로 기숙사입니다!",
-                "기숙사는 편안한 공간과 아늑한 분위기로, 휴식과 편안함을 제공하는 장소입니다.",
-                "기숙사에서는 다른 학생들과의 교류와 친목을 즐기는 벗들을 많이 만날 수 있어요.",
-                "아늑한 장소인 기숙사에서 룸메이트와 예술적인 감상을 공유하면서 학교 생활을 더욱 풍성하고 유익하게 만들 수 있을 거예요.",
-                "다른 사람을 생각해주는 벗과 함께라면 기숙사가 집만큼 편할 수도 있을 것 같네요!",
-                "기숙사에서 벗들과 함께 나누는 소중한 시간들을 이화이언에도 공유해주세요!"
+                "벗에게 추천하는 이화여대 건물은 바로 이하우스입니다!",
+                "이하우스는 편안한 공간과 아늑한 분위기로, 휴식과 편안함을 제공하는 장소입니다.",
+                "이하우스에서는 다른 학생들과의 교류와 친목을 즐기는 벗들을 많이 만날 수 있어요.",
+                "아늑한 장소인 이하우스에서 룸메이트와 예술적인 감상을 공유하면서 학교 생활을 더욱 풍성하고 유익하게 만들 수 있을 거예요.",
+                "다른 사람을 생각해주는 벗과 함께라면 이하우스가 집만큼 편할 수도 있을 것 같네요!",
+                "이하우스에서 벗들과 함께 나누는 소중한 시간들을 이화이언에도 공유해주세요!"
             ],
             "BestChemi": "ECC",
             "BestSubname": "넘치는 사랑",
@@ -187,7 +187,7 @@
         {
             "name": "중앙도서관",
             "img_path": "/img/ResultPage/Building/library.png",
-            "subname": "",
+            "subname": "지식 탐구형",
             "text": [
                 "지적인 호기심을 위해 탐구정신을 발휘하는 벗!",
                 "벗에게 추천하는 이화여대 건물은 바로 중앙도서관입니다!",
@@ -297,7 +297,7 @@
                 "다른 사람을 도와주려는 따뜻한 마음을 가진 벗과 함께라면 즐거운 추억을 만들 수 있을 것 같네요!",
                 "이화이언의 다른 벗들에게도 ECC에서 만든 추억을 공유해주세요!"
             ],
-            "BestChemi": "기숙사",
+            "BestChemi": "이하우스",
             "BestSubname": "이불 밖은 위험해",
             "BestImg": "/img/ResultPage/Building/dormitory.png",
             "WorstChemi": "중앙도서관",

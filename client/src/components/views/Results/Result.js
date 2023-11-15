@@ -43,7 +43,10 @@ function Result() {
         // });
 
         $(document).ready(function () {
-            setTimeout(function () { $('#loading').hide() }, 4500);
+            setTimeout(function () {
+                $('#loading').hide();
+                $('.GoGuideButton').css("display", "block")
+            }, 4500);
         });
         return (
             <div className="ResultPage">
