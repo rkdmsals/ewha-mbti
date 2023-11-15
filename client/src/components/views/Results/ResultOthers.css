@@ -61,7 +61,7 @@
 .GoGuideButton {
     position: relative;
     font-size: 16px;
-    display: block;
+    display: none;
     width: 163px;
     padding: 9px 0px;
     /* height: 38px; */
@@ -74,6 +74,7 @@
     /* vertical-align: middle; */
     font-family: "UhBee_ZZIBA";
     font-style: normal;
+    transform: translateZ(0);
 }
 
 button:hover,

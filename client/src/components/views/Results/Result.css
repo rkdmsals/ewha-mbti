@@ -1,5 +1,5 @@
 .ResultPage {
-    font-family: locus_sangsang;
+    font-family: "locus_sangsang";
     font-style: normal;
     color: #2B503B;
     width: 100vw;
@@ -191,25 +191,30 @@
     position: fixed;
     background-color: #2E6D4A;
     background-image: url(../../../../public/img/ResultPage/blocks.png);
-    object-fit: cover;
     width: 100vw;
     height: 100vh;
+    object-fit: fill;
     /* z-index: 90; */
     color: #F8FFE4;
     font-size: 24px;
+    transform: translateZ(0);
+    /* backface-visibility: visible; */
+    box-sizing: border-box;
 }
 
 #loading div {
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
 }
 
 #loading img {
-    width: 120px;
+    width: 40%;
     height: auto;
     margin-bottom: 18px;
-    margin-top: 36vh;
+    margin-top: 40vh;
 }
 
 @media (max-width: 600px) {

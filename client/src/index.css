@@ -13,6 +13,8 @@ code {
 }
 
 img {
-  transform: translateZ(0);
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(90);
   backface-visibility: hidden;
+  border: none;
 }
