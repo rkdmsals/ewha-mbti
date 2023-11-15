@@ -3,8 +3,14 @@ import { Link } from "react-router-dom";
 import Kakao from "./Kakao";
 import resultData from "./results.json";
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 //이미지 로딩 속도가 느린 것을 개선하기 위해 아래 부분은 deconding="async"를 넣어 화면이 보여질 때 로딩되도록 수정함
 function ResultOthers() {
+    const [isKakaoBrowser, setKakaoBrowser] = useState(false);
+    useEffect(() => {
+        const isKakao = navigator.userAgent.match("KAKAOTALK");
+        setKakaoBrowser(Boolean(isKakao));
+    }, []);
 
     let params = useParams();
     let pageData = resultData.results[params.id - 1];
@@ -15,17 +21,22 @@ function ResultOthers() {
         if (!Kakao.isInitialized()) {
             Kakao.init('9ffafc59b49ca4a20ae876b0a1742b22');
         }
-        //카카오 메시지 템플릿 기능 이용, 템플릿 생성 후 templateId만 변경하면 됨
-        Kakao.Share.createCustomButton({
-            container: '#KakaoButton',
-            templateId: 98548,
-            templateArgs: {
-                //서버에 이미지 파일 올려야 가능한 기능
-                // ResultImg: "public"+imageUrl,
-                title: '나와 잘어울리는 이화여대 건물은?',
-                description: '링크에서 테스트해보기',
-            },
-        });
+        // 카카오 인앱 브라우저는 지원하지 않음-> 버튼 클릭시 안내
+        if (isKakaoBrowser) {
+            alert("카카오 인앱 브라우저에서는 카카오톡 공유 기능을 지원하지 않습니다. 다른 브라우저를 이용해주세요")
+        }
+        {//카카오 메시지 템플릿 기능 이용, 템플릿 생성 후 templateId만 변경하면 됨
+            Kakao.Share.createCustomButton({
+                container: '#KakaoButton',
+                templateId: 98548,
+                templateArgs: {
+                    //서버에 이미지 파일 올려야 가능한 기능
+                    // ResultImg: "public"+imageUrl,
+                    title: '나와 잘어울리는 이화여대 건물은?',
+                    description: '링크에서 테스트해보기',
+                },
+            });
+        }
     }
 
     //이미지 저장 함수
