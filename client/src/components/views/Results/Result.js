@@ -43,7 +43,7 @@ function Result() {
         // });
 
         $(document).ready(function () {
-            $('#loading').hide();
+            setTimeout(function () { $('#loading').hide() }, 4500);
         });
         return (
             <div className="ResultPage">
