@@ -4350,9 +4350,7 @@ var screen = window.screen;
     }
     function isSupportTalkSharing(_ref) {
         var throughTalk = _ref.throughTalk;
-        // var isUnsupportedBrowser = /opr\/|opt\/|huawei/g.test(UA.ua);
-        // 아래 코드를 바꾸면 모바일에서도 공유창이 뜬다..!(근데 웹으로 뜸)
-        var isUnsupportedBrowser = `/opr\/|opt\/|huawei/g.test(UA.ua)`;
+        var isUnsupportedBrowser = /opr\/|opt\/|huawei/g.test(UA.ua);
         var isMobile = !isUnsupportedBrowser && (UA.platform === 'mobile' || UA.platform === isIpad);
         // var isMobile = true;
         return isTalkWebview || throughTalk && isMobile;
@@ -5168,7 +5166,6 @@ var screen = window.screen;
     var langs = ['ko', 'en', 'ja'];
     function channelIdValidator(id) {
         return isString(id) && !/(.{1,2}\/)/g.test(id);
-        // return isString(id) && !`/(.{1,2}\/)/g.test(id)`;
     }
     var rules$3 = {
         createAddChannelButton: {
@@ -5573,7 +5570,6 @@ var screen = window.screen;
         iframe$.setAttribute('style', "width:".concat(iframeWidth, "px; height:").concat(iframeHeight, "px;"));
         var messageHandler = function messageHandler(e) {
             if (e.data && /\.kakao\.com$/.test(e.origin) && typeof e.data === 'string') {
-                // if (e.data && `/\.kakao\.com$/.test(e.origin)` && typeof e.data === 'string') {
                 var _map = map(e.data.split(','), function (e) {
                     return parseInt(e, 10);
                 }),
