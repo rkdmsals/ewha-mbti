@@ -68,7 +68,7 @@ function ResultOthers() {
 
     return (
         <div className="ResultOthers">
-            <div className="ShareText"><img src="/img/ResultPage/Buttons/share.png"></img><span>공유하기</span></div>
+            <div className="ShareText"><img src="/img/ResultPage/Buttons/share.png"></img><span>결과 저장 및 공유하기</span></div>
             <div className="ShareButtons">
                 <div className="SNSButton" id="KakaoButton" onClick={ShareKakao}>
                     <img
