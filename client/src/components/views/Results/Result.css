@@ -135,7 +135,7 @@
 
 .ChemiImg {
     max-width: 90%;
-    height: 96px;
+    height: 124px;
     padding-top: 17px;
 }
 
@@ -321,12 +321,12 @@
     }
 
     .ResultImageFrame {
-        height: 420px;
+        height: 360px;
     }
 
     .TypeImg {
-        width: 80%;
-        height: auto;
+        max-width: 80%;
+        height: 160px;
         padding-bottom: 22px;
     }
 

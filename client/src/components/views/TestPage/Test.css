@@ -63,6 +63,7 @@
     line-height: 1.4;
     justify-items: center;
     vertical-align: middle;
+    word-break: keep-all;
 }
 
 .Answer1,
@@ -93,8 +94,8 @@
 @media screen and (max-width:480px) {
 
     .TestQuestion {
-        width: 90%;
-        font-size: 22px;
+        width: 85%;
+        font-size: 21px;
     }
 
     .TestInner {
@@ -103,8 +104,10 @@
 
     .Answer1,
     .Answer2 {
-        width: 85%;
+        width: 90%;
         font-size: 18px;
+        word-break: break-all;
+        padding: 4px 30px 4px 30px;
     }
 
     .ProgressBar {
