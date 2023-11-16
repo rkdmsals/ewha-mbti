@@ -5,7 +5,6 @@ import resultData from "./results.json";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 // import html2canvas from 'html2canvas';
 import $ from "jquery"
-import { type } from "os-browserify";
 function Result() {
     const location = useLocation();
     let params = useParams();
