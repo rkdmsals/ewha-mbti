@@ -44,10 +44,16 @@ function Result() {
 
         $(document).ready(function () {
             setTimeout(function () {
+                window.scrollTo(0, 0);
                 $('#loading').hide();
                 $('.GoGuideButton').css("display", "block")
             }, 4500);
         });
+
+        if (type1 == 3) {
+            $('#Percent1').css("padding-left", "2%");
+            $('#Percent1').css("padding-right", "2%");
+        }
         return (
             <div className="ResultPage">
                 <div id="loading">
@@ -66,7 +72,7 @@ function Result() {
                 {/*외향, 내향 등의 비율을 나타내는 부분 */}
                 <div className="ResultFrame">
                     <div className="ResultPercent">
-                        <img className="ResultPercentEach" src={`/img/ResultSection/type1_section` + type1 + '.png'} />
+                        <img className="ResultPercentEach" id="Percent1" src={`/img/ResultSection/type1_section` + type1 + '.png'} />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type2_section` + type2 + '.png'} />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type3_section` + type3 + '.png'} />
                         <img className="ResultPercentEach" src={`/img/ResultSection/type4_section` + type4 + '.png'} />
