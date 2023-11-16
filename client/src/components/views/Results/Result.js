@@ -5,6 +5,7 @@ import resultData from "./results.json";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 // import html2canvas from 'html2canvas';
 import $ from "jquery"
+import { type } from "os-browserify";
 function Result() {
     const location = useLocation();
     let params = useParams();
@@ -19,25 +20,127 @@ function Result() {
         type3 = location.state[2]
         type4 = location.state[3]
         var typename1, typename2, typename3, typename4;
-        var id = params.id;
-        if (id % 2 == 1) {
-            typename1 = "외향"
-        } else {
-            typename1 = "내향"
+        const id = Number(params.id);
+        switch (id) {
+
+            case 1:
+                typename1 = "외향"
+                typename2 = "상상"
+                typename3 = "이성";
+                typename4 = "즉흥";
+                break;
+            case 2:
+                typename1 = "내향"
+                typename2 = "상상"
+                typename3 = "이성";
+                typename4 = "즉흥";
+                break;
+            case 3:
+                typename1 = "외향"
+                typename2 = "직관"
+                typename3 = "이성";
+                typename4 = "즉흥";
+                break;
+            case 4:
+                typename1 = "내향"
+                typename2 = "직관"
+                typename3 = "이성";
+                typename4 = "즉흥";
+                break;
+            case 5:
+                typename1 = "외향"
+                typename2 = "상상"
+                typename3 = "감성";
+                typename4 = "즉흥";
+                break;
+            case 6:
+                typename1 = "내향"
+                typename2 = "상상"
+                typename3 = "감성";
+                typename4 = "즉흥";
+                break;
+            case 7:
+                typename1 = "외향"
+                typename2 = "직관"
+                typename3 = "감성";
+                typename4 = "즉흥";
+                break;
+            case 8:
+                typename1 = "내향"
+                typename2 = "직관"
+                typename3 = "감성";
+                typename4 = "즉흥";
+                break;
+            case 9:
+                typename1 = "외향"
+                typename2 = "상상"
+                typename3 = "이성";
+                typename4 = "계획";
+                break;
+            case 10:
+                typename1 = "내향"
+                typename2 = "상상"
+                typename3 = "이성";
+                typename4 = "계획";
+                break;
+            case 11:
+                typename1 = "외향"
+                typename2 = "직관"
+                typename3 = "이성";
+                typename4 = "계획";
+                break;
+            case 12:
+                typename1 = "내향"
+                typename2 = "직관"
+                typename3 = "이성";
+                typename4 = "계획";
+                break;
+            case 13:
+                typename1 = "외향"
+                typename2 = "상상"
+                typename3 = "감성";
+                typename4 = "계획";
+                break;
+            case 14:
+                typename1 = "내향"
+                typename2 = "상상"
+                typename3 = "감성";
+                typename4 = "계획";
+                break;
+            case 15:
+                typename1 = "외향"
+                typename2 = "직관"
+                typename3 = "감성";
+                typename4 = "계획";
+                break;
+            case 16:
+                typename1 = "내향"
+                typename2 = "직관"
+                typename3 = "감성";
+                typename4 = "계획";
+                break;
         }
-        if ((id / 2) % 2 == 1) {
-            typename2 = "상상"
-        } else {
-            typename2 = "직관"
-        } if ((id / 4) % 2 == 1) {
-            typename3 = "이성"
-        } else {
-            typename3 = "감성"
-        } if ((id / 8) % 2 == 1) {
-            typename4 = "즉흥"
-        } else {
-            typename4 = "계획"
-        }
+        // if (Math.floor(id / 8) == 1) {
+        //     typename1 = "외향"
+        // } else {
+        //     typename1 = "내향"
+        // }
+        // if (Math.floor((id % 8) / 4) == 1) {
+        //     typename2 = "상상"
+        // } else {
+        //     typename2 = "직관"
+        // } if (Math.floor((id % 4) / 2) == 1) {
+        //     typename3 = "이성"
+        // } else {
+        //     typename3 = "감성"
+        // } if (Math.floor(id / 2) == 1) {
+        //     typename4 = "즉흥"
+        // } else {
+        //     typename4 = "계획"
+        // }
+        // console.log(id % 2)
+        // console.log(id % 4)
+        // console.log(id % 8)
         // $(window).on('load', function () {
         //     $('#loading').hide();
         // });
