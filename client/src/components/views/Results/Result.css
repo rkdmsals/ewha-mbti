@@ -194,7 +194,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: fill;
-    /* z-index: 90; */
+    z-index: 100;
     color: #F8FFE4;
     font-size: 24px;
     transform: translateZ(0);
